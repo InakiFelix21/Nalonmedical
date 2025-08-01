@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nalon Medical</title>
+	<link rel="shortcut icon" type="image/png" href="assets/img/Copia de Logo-tecsolpar-fondo.png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+	<div class="top-header-area" id="sticker">
+		<div class="container-header">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/Logo-nalon.jpg" alt="">
+							</a>
+						</div>
+						<div class="translate">
+							<div id="google_translate_element"></div>
+							<script type="text/javascript">
+								function googleTranslateElementInit() {
+									new google.translate.TranslateElement({
+										pageLanguage: 'es', // Idioma predeterminado de la página
+										includedLanguages: 'en,es', // Idiomas que quieres mostrar
+										layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+									}, 'google_translate_element');
+								}
+							
+								function triggerGoogleTranslate() {
+									const select = document.querySelector("select.goog-te-combo");
+									if (select) {
+										select.value = 'en'; // Traducción al inglés
+										select.dispatchEvent(new Event("change"));
+									}
+								}
+							
+								// Event listener para el botón de desktop
+								document.getElementById('custom-translate-btn').addEventListener('click', triggerGoogleTranslate);
+							
+								// Event listener para el botón de mobile
+								document.getElementById('custom-translate-btn-mobile').addEventListener('click', triggerGoogleTranslate);
+							
+								// Cargar el script de Google Translate
+								var googleTranslateScript = document.createElement('script');
+								googleTranslateScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+								document.body.appendChild(googleTranslateScript);
+							</script>
+							<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+						</div>
+						<nav class="main-menu">
+							<ul class="menu-list">
+								
+                                <li class="nav-text"><a href="./about.html">SOBRE NOSOTROS</a></li>
+                                <li class="nav-text"><a href="./productos.html">PRODUCTOS</a></li>
+                                <li class="nav-text"><a href="./unidad.html">UNIDAD DE CALIDAD</a></li>
+                                <!-- <li class="nav-text"><a href="">NOVEDADES</a></li> -->
+                                <li class="nav-text"><a href="./contact.html">CONTACTO</a></li>
+								
+							</ul>
+						</nav>
+						<div class="menu-toggle" onclick="openNav()">&#9776;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<!-- Slide-bar Menu -->
+		<div id="mySidenav" class="sidenav">
+			<div class="close-container">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</div>
+			<div class="links-container">
+				<a href="./about.html">SOBRE NOSOTROS</a>
+				<a href="./productos.html">PRODUCTOS</a>
+				<a href="./unidad.html">UNIDAD DE CALIDAD</a>
+				<a href="./novedades.html">NOVEDADES</a>
+				<a href="./contact.html">CONTACTO</a>
+				
+			</div>
+		</div>
+	<!-- Fin Slide-bar Menu -->
+	<div class="hero-area hero-bg">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-2 text-center">
+                <div class="hero-text">
+                    <div class="hero-text-tablecell">
+						<h1 class="hero-h1" id="hero-title">
+							<span class="hero-title-main">PASIÓN POR LA CALIDAD.</span>
+							<span class="hero-text-span"><br> TECNOLOGÍA EN SOLUCIONES PARENTERALES</span>
+						</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- end hero area -->
+
+	<!-- features list section -->
+	<div class="separador-1">
+	</div>
+	
+	<div class="list-section pt-80 pb-80">
+			<div class="row row-home">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="img-icon">
+							<img src="./assets/img/Logo-nalon.jpg" alt="">
+						</div>
+						<div class="content">
+							<h3 id="feature-industry">Industria nacional</h3>
+							<p id="feature-national">Empresa 100% nacional</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="img-icon-serum">
+							<img src="./assets/img/Logo-nalon.jpg" alt="">
+						</div>
+						<div class="content">
+							<h3 id="feature-products">Productos</h3>
+							<a href="productos.html" class="list-section-btn">Ver más</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="list-box d-flex justify-content-start align-items-center">
+						<div class="img-icon">
+							<img src="./assets/img/Copia de company.png" alt="">
+						</div>
+						<div class="content">
+							<h3 id="feature-work-team">Equipo de trabajo</h3>
+							<p id="feature-employees">+200 trabajadores</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- end features list section -->
+
+	<!-- product section -->
+	<div class="product-section mt-150 mb-150">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 text-center">
+				<div class="section-title">    
+					<h3>Nuestra empresa</h3>
+				</div>
+			</div>
+		</div>
+		<section class="info-inicio">
+			<div class="info-post">
+				<h3>Misión</h3>
+				<p>Ser la compañía farmacéutica líder del sector de soluciones parenterales comprometida con mejorar la salud y el bienestar de los pacientes, actuando con responsabilidad, profesionalidad y compromiso, haciendo énfasis permanente en la excelencia, con los pacientes en el centro de todos nuestros esfuerzos.</p>
+			</div>
+			<div class="info-post-medio">
+				<h3>Valores</h3>
+				<p>La labor de Tecsolpar Laboratorios se sustenta en valores perdurables, que avalan su misión y le permiten alcanzar los propósitos de su visión.</p>
+				<span class="span-info-medio">Profesionalidad, Responsabilidad social, Calidad y Orientación al paciente y su bienestar.</span>
+				<a href="./about.html" class="info-medio-btn">Ver más</a>
+			</div>
+			<div class="info-post-derecha">
+				<h3>Visión</h3>
+				<p>Ser reconocidos como referentes de excelencia y calidad en el sector farmacéutico nacional e internacional, evolucionando y adaptándonos a los constantes cambios y desafíos que las tecnologías y la investigación nos plantean.</p>
+			</div>
+		</section>			
+	</div>		
+<!-- end product section -->
+	<div class="separador">
+	 </div>
+	 <section class="cart-banner pt-100 pb-100">
+		<div class="row">
+			<div class="image-column col-lg-6">
+				<div class="image">
+					<div class="img-fabrica">
+						<img src="assets/img/Copia de fabrica-portada-3.jpeg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="content-column col-lg-6">
+				<p class="content-column-p">Soluciones inyectables de pequeño volumen</p>
+				<h3 class="content-column-h3">Tecnología</h3>
+				<span class="h3-span">Blow-Fill-Seal</span>
+				<div class="separador-2"></div>
+				<div class="text">
+					<p>Tecsolpar Laboratorios innova incorporando a su vademécum soluciones inyectables en ampollas plásticas de última generación, que brindan un alto grado de seguridad, fiabilidad y comodidad en el manejo del envase en presentaciones de 5ml y 10ml.</p>
+				</div>
+				<a href="productos.html" class="content-column-btn">Saber más</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="cart-banner pt-100 pb-100">
+		<div class="row">
+			<div class="content-column-izq col-lg-6">
+				<p class="content-column-p">Soluciones parenterales de gran volumen</p>
+				<h3 class="content-column-izq-h3">Tecnología</h3>
+				<span class="h3-span-izq">Form-Fill-Seal</span>
+				<div class="separador-2"></div>
+				<div class="text">
+					<p>Tecsolpar Laboratorios fue pionero en la implementación de la tecnología form, fill, seal para la elaboración de sus especialidades farmacéuticas de soluciones parenterales de gran volumen en sistema cerrado en el país. Desde el año 2008, viene invirtiendo constantemente en tecnología de punta adelantándose, incluso, a las normativas nacionales en materia de envases primarios.
+					</p>
+				</div>
+				<a href="productos.html" class="content-column-izq-btn"> Saber más</a>
+			</div>
+			<div class="image-column-der col-lg-6">
+				<div class="image">
+					<div class="img-fabrica-der">
+						<img src="assets/img/IMG_0095-768x392.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Páginas<i class="fa fa-chevron-down icono-footer-derecha"></i></h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">Sobre nosotros</a></li>
+							<li><a href="productos.html">Productos</a></li>
+							<li><a href="unidad.html">Unidad de calidad</a></li>
+							<li><a href="contact.html">Contacto</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 contacto-footer">
+					<div class="footer-box footer-box-contacto">
+						<h2 class="widget-title-contacto">Contacto <i class="fa fa-chevron-down icono-footer-derecha"></i></h2>
+						<ul>
+							<li><a href="#">Mail: info@tecsolpar.com.ar</a></li>
+							<li><a href="#">Telefono: +54 0223 474 1374</a></li>
+							<li> <a href="https://www.instagram.com/tecsolparlaboratorios/">Instagram: tecsolparlaboratorios</a></li>
+							<li> <a href="https://www.linkedin.com/company/tecsolpar-s-a-/">Linkedin</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box footer-box-ayuda">
+						<h2 class="widget-title-ayuda">Central de ayuda <i class="fa fa-chevron-down icono-footer-derecha"></i></h2>
+						<ul>
+							<li><a href="./cookies.html">Política de cookies</a></li>
+							<li><a href="./assets/img/Informacion_Sanitaria_Tecsolpar.pdf" target="_blank">Información sanitaria</a></li>
+							<li><a href="#">Condiciones generales</a></li>
+							<li><a href="./assets/img/Aviso legal (web).pdf" target="_blank">Aviso legal</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title-suscribite">Suscribite <i class="fa fa-chevron-down icono-footer-derecha"></i></h2>
+						<p>Entérese de todas las novedades.</p>
+						<form action="https://formspree.io/f/xanwkzpl" method="POST" class="subscribe-form">
+							<input type="email" name="email" placeholder="Email" required>
+							<button type="submit" class="suscribe-button">
+								<i class="fa-solid fa-paper-plane"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/translate.js"></script>
+
+</body>
+</html>
