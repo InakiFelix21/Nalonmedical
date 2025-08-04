@@ -433,8 +433,8 @@ html {
   }
   
   .top-header-area {
-    position: absolute;
-    z-index: 999;
+    /* position: absolute; */
+    /* z-index: 999; */
     width: 100%;
   }
   
@@ -456,17 +456,17 @@ html {
     max-width: 150px;
   }
   nav.main-menu ul {
-    list-style: none;
-    position: relative;
+    /* list-style: none; */
+    /* position: relative; */
     float: right;
-    margin-bottom: 0px;
-    bottom: 23px;
+    /* margin-bottom: 0px; */
+    /* bottom: 23px; */
   }
   nav.main-menu ul li {
     display: inline-block;
   }
   nav.main-menu ul li a {
-    color: #ffffff;
+    color: #000;
     display: block;
     margin: 0px 10px;
     font-size: 14px;
@@ -1032,7 +1032,7 @@ h2.widget-title-ayuda:after {
   .footer-box.pages ul li:before {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 2px;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -1444,16 +1444,16 @@ h2.widget-title-ayuda:after {
   }
 
   .hero-bg {
-    background-image: url(../img/Copia\ de\ tecsolpar-canva.png);
+    /* background-image: url(../img/Copia\ de\ tecsolpar-canva.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    z-index: 1;
-    height: 100vh; 
+    z-index: 1; */
+    height: 55%; 
 } 
   
-.hero-bg:after {
+/* .hero-bg:after {
     position: absolute;
     left: 0;
     top: 0;
@@ -1463,6 +1463,26 @@ h2.widget-title-ayuda:after {
     background-color: #216faad5; 
     z-index: -1;
     opacity: 0.5; 
+} */
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .offset-lg-2 {
+    margin-left: 0;
+}
+
+.col-lg-9 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col-lg-9 {
+  padding-right: 0;
+  padding-left: 0;
 }
   
   .hero-text {
@@ -1474,11 +1494,11 @@ h2.widget-title-ayuda:after {
     display: table-cell;
   }
   
-  .hero-area {
+  /* .hero-area {
     height: 80%;
     position: relative;
     z-index: 1;
-  }
+  } */
   
   .hero-area:after {
     position: absolute;
@@ -1500,31 +1520,31 @@ h2.widget-title-ayuda:after {
   .hero-text h1 {
     font-size: 46px;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 1);
+    color: #000;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-style: normal;
-    margin-right: 35px;
+    /* margin-right: 35px; */
     position: relative;
-    right: 40px;
+    /* right: 40px; */
   }
   
-  .hero-text-span{
+  /* .hero-text-span{
     font-size: 45px;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 1);
+    color: #000;
     margin-bottom: 60px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+  } */
   
   .hero-area div {
     height: 100%;
   }
   
   .hero-area div.hero-text {
-    height: 94%;
+    /* height: 94%; */
     width: 100%;
   }
   
