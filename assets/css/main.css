@@ -253,20 +253,6 @@ html {
     padding: 7px 20px;
   }
   
-  a.read-more-btn {
-    display: inline-block;
-    margin-top: 15px;
-    color: #051922;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    font-weight: 700;
-  }
-  
-  a.read-more-btn:hover {
-    color: #367ec5;
-  }
-  
   a.boxed-btn, a.bordered-btn, a.cart-btn {
     border-radius: 50px;
   }
@@ -361,8 +347,7 @@ html {
     background-attachment: fixed;
     padding-top: 200px;
   }
-  /* -----------------------------------------------------------------------------
-  ----------------------------------------------------------------------------- */
+  /* ------------------ */
   /* Slide-bar styles */
   .sidenav {
     height: 100%;
