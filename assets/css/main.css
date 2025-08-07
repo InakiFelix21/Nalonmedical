@@ -406,15 +406,13 @@ html {
   .container-header {
     margin: 0 75px;
     max-width: 100%;
-    border-bottom: 1px solid #fff;
   }
 
-  
   .top-header-area {
     width: 100%;
-    margin-top: 5px;
-    background-color: #f8f9fc; /* gris muy suave */
-    border-bottom: 1px solid #e0e0e0; /* línea gris clara debajo */
+    padding: 3px 0;
+    background-color: #eff0f3;
+    border-bottom: 1px solid #e0e0e0;
     z-index: 1000;
     position: relative;
   }
@@ -861,6 +859,7 @@ html {
     background-color: #ffffff;
     padding: 60px 20px;
     text-align: center;
+    margin: 30px 0 90px 0;
   }
   
   .container-dialisis {
@@ -888,7 +887,6 @@ html {
     padding: 30px 18px;
     border-radius: 12px;
     width: 297px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
   
   .card-dialisis i {
@@ -928,7 +926,139 @@ html {
     color: #ffffff;
   }
   /*---------------- FIN DIÁLISIS INICIO -----------------*/
+
+  /*---------------- PRODUCTOS ----------------*/
+  .productos-premium-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
   
+  .productos-premium-section h2 {
+    font-size: 36px;
+    color: #062356;
+    margin-bottom: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+  .tarjeta-producto {
+    background-color: #ebecf2;
+    border-left: 5px solid #062356;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+  }
+  
+  .tarjeta-contenido h3 {
+    font-size: 22px;
+    color: #062356;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-contenido p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-contenido a {
+    font-size: 15px;
+    color: #0a3b91;
+    text-decoration: underline;
+    font-weight: 500;
+  }  
+/*---------------- FIN PRODUCTOS ----------------*/
+  
+
+.contact-dial-section {
+  padding: 80px 20px;
+  background-color: #f8f9fc;
+  text-align: center;
+}
+
+.contact-dial-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-dial-section h1 {
+  color: #062356;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-dial-section p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.contact-dial-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-dial-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-dial-form input,
+.contact-dial-form textarea {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-dial-form button {
+  padding: 12px 20px;
+  background-color: #062356;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-dial-form button:hover {
+  background-color: #0a3b91;
+}
+
+.contact-dial-info {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.contact-dial-info h3 {
+  font-size: 22px;
+  color: #062356;
+  margin-bottom: 20px;
+}
+
+.contact-dial-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
   /* -----------------------------------------------------------------------------
   # Footer Styles
   ----------------------------------------------------------------------------- */
@@ -1344,6 +1474,7 @@ h2.widget-title-ayuda:after {
 
   .hero-bg {
     height: 80%; 
+    border-bottom: solid 1px #c4c4c4aa;
   } 
 
   .row {
@@ -1884,7 +2015,7 @@ h2.widget-title-ayuda:after {
 
 .text-content {
     display: flex;
-    flex-direction: column; /* Alinear en columna el contenido de texto */
+    flex-direction: column; 
 }
 
 .shop-banner-text h3 {
@@ -1983,12 +2114,6 @@ h2.widget-title-ayuda:after {
   .responsive-h3, .responsive-span {
     display: none;
   }
-
-/* ---------------SOBRE NOSOTROS---------------- */
-
-/*-------- FIN HIST --------*/
-
-/*------------------ END SOBRE NOSOTROS -------------------*/
 
   /* -----------------------------------------------------------------------------
   # About Page Styles
@@ -2103,62 +2228,6 @@ h2.widget-title-ayuda:after {
   .pt-100-3 {
     padding-top: 0;
   }
-
-
-
-/*---------------- PRODUCTOS ----------------*/
-
-.productos-section {
-  padding: 60px 20px;
-  background-color: #f8f9fc;
-  text-align: center;
-}
-
-.container-productos {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.productos-section h2 {
-  font-size: 36px;
-  color: #062356;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-
-.producto-fila {
-  display: flex;
-  align-items: flex-start;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  text-align: left;
-  gap: 20px;
-}
-
-.icono-producto i {
-  font-size: 30px;
-  color: #062356;
-  margin-top: 5px;
-  min-width: 40px;
-}
-
-.texto-producto h3 {
-  font-size: 20px;
-  color: #062356;
-  margin-bottom: 10px;
-}
-
-.texto-producto p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.5;
-}
-/*---------------- FIN PRODUCTOS ----------------*/
-
 
 /*--------- FORM UNIDAD ------------*/
 .form-unidad-section {
