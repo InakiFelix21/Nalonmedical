@@ -411,8 +411,8 @@ html {
   .top-header-area {
     width: 100%;
     padding: 3px 0;
-    background-color: #eff0f3;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #fafafb;
+    border-bottom: 1px solid #062356;
     z-index: 1000;
     position: relative;
   }
@@ -844,6 +844,7 @@ html {
     font-size: 20px;
     color: #062356;
     margin-bottom: 8px;
+    font-family: "Montserrat", sans-serif;
   }
   
   .nosotros-bloques p {
@@ -911,6 +912,7 @@ html {
     font-size: 20px;
     color: #062356;
     margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
   }
   
   .card-dialisis p {
@@ -972,6 +974,7 @@ html {
     font-size: 22px;
     color: #062356;
     margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
   }
   
   .tarjeta-contenido p {
@@ -990,29 +993,29 @@ html {
 /*---------------- FIN PRODUCTOS ----------------*/
   
 
+/* ===== Contacto (Nalon Medical) ===== */
 .contact-dial-section {
   padding: 80px 20px;
   background-color: #f8f9fc;
   text-align: center;
 }
-
 .contact-dial-container {
   max-width: 1100px;
   margin: 0 auto;
 }
-
-.contact-dial-section h1 {
+.contact-dial-section h1,
+.contact-dial-section h2 {
+  font-size: 36px;
   color: #062356;
-  margin-bottom: 20px;
-  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
 }
-
 .contact-dial-section p {
   font-size: 16px;
   color: #333;
   margin-bottom: 40px;
 }
 
+/* Layout columnas */
 .contact-dial-content {
   display: flex;
   flex-wrap: wrap;
@@ -1021,6 +1024,7 @@ html {
   align-items: flex-start;
 }
 
+/* Formulario */
 .contact-dial-form {
   flex: 1;
   min-width: 300px;
@@ -1028,48 +1032,286 @@ html {
   display: flex;
   flex-direction: column;
 }
-
 .contact-dial-form input,
-.contact-dial-form textarea {
+.contact-dial-form textarea,
+.contact-dial-select {
   padding: 12px 15px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccd2da;
   border-radius: 6px;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: #fff;
+  color: #333;
+  outline: none;
+}
+.contact-dial-form input:focus,
+.contact-dial-form textarea:focus,
+.contact-dial-select:focus {
+  border-color: #9fb3d1;
+  box-shadow: 0 0 0 3px rgba(10, 59, 145, 0.08);
 }
 
+/* Botón enviar */
 .contact-dial-form button {
   padding: 12px 20px;
   background-color: #062356;
-  color: white;
+  color: #fff;
   font-weight: 500;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color .3s ease, box-shadow .3s ease, transform .02s ease;
 }
-
 .contact-dial-form button:hover {
   background-color: #0a3b91;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+.contact-dial-form button:active {
+  transform: translateY(1px);
 }
 
-.contact-dial-info {
-  flex: 1;
-  min-width: 250px;
+/* Consentimiento + aviso legal */
+.contact-dial-consent {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+.contact-dial-consent input {
+  transform: translateY(2px);
+}
+.contact-dial-legal {
+  display: block;
+  color: #6b7280;
+  margin: 6px 0 14px;
   text-align: left;
 }
 
+/* Columna info */
+.contact-dial-info {
+  flex: 1;
+  min-width: 260px;
+  text-align: left;
+}
 .contact-dial-info h3 {
   font-size: 22px;
   color: #062356;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
-
 .contact-dial-info p {
-  font-size: 16px;
   margin-bottom: 10px;
   color: #444;
 }
+
+/* Acciones rápidas */
+.contact-dial-quick {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.contact-dial-btn-quick {
+  padding: 10px 14px;
+  border: 1px solid #e0e6ef;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #062356;
+  font-size: 14px;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+.contact-dial-btn-quick:hover {
+  background: #f5f7fb;
+  border-color: #cfd7e6;
+}
+
+/* Mapa (opcional) */
+.contact-dial-map { margin-top: 18px; }
+.contact-dial-map iframe {
+  width: 100%;
+  height: 260px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* PAGINA PRODUCTOS */
+
+/* ===== Página de Productos (layout catálogo con sidebar) ===== */
+.products-dial-page {
+  background: #ffffff;
+  padding: 60px 20px 90px;
+}
+
+.products-dial-wrap {
+  max-width: 1200px;
+  margin: 0 auto 0 45px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+}
+
+/* Sidebar */
+.products-dial-sidebar {
+  position: sticky;
+  top: 90px;             /* baja si tu header es más alto */
+  align-self: start;
+  background: #f8f9fc;
+  border: 1px solid #e6eaf1;
+  border-radius: 10px;
+  padding: 20px;
+}
+.products-dial-sidebar h2 {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  color: #062356;
+  font-weight: 600;
+}
+.products-dial-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.products-dial-nav a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0a2c66;
+  border: 1px solid transparent;
+  transition: background-color .2s ease, border-color .2s ease;
+  font-size: 15px;
+}
+.products-dial-nav a:hover {
+  background: #eef3fb;
+  border-color: #e0e8f5;
+}
+.products-dial-nav a.active {
+  background: #e9f0fb;
+  border-color: #d6e3fa;
+}
+
+/* Contenido */
+.products-dial-content h1 {
+  font-size: 35px;
+  color: #062356;
+  margin: 0 0 6px 0;
+  font-weight: 600;
+}
+.products-dial-header p {
+  color: #444;
+  margin-bottom: 26px;
+  line-height: 1.6;
+}
+
+/* Secciones */
+.products-dial-section {
+  background: #ffffff;
+  border: 1px solid #e9edf4;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  padding: 22px 24px;
+}
+.products-dial-section .products-dial-section {
+  margin-top: 24px;
+}
+.products-dial-section-head h2 {
+  font-size: 22px;
+  color: #062356;
+  margin: 0 0 6px 0;
+  font-weight: 600;
+}
+.products-dial-section-body p {
+  color: #444;
+  line-height: 1.6;
+}
+.products-dial-bullets {
+  margin: 14px 0 18px 18px;
+  color: #333;
+}
+.products-dial-bullets li { margin-bottom: 6px; }
+
+/* Grid de items futuros */
+.products-dial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+.products-dial-item {
+  background: #f8f9fc;
+  border: 1px solid #e6eaf1;
+  border-radius: 10px;
+  padding: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.products-dial-item h3 {
+  font-size: 18px;
+  color: #062356;
+  margin: 0 0 6px 0;
+}
+.products-dial-item p {
+  color: #444;
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+}
+.products-dial-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* Acciones */
+.products-dial-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.products-dial-btn {
+  display: inline-block;
+  padding: 9px 16px;
+  background-color: #062356;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color .25s ease, box-shadow .25s ease, transform .02s ease;
+}
+.products-dial-btn:hover {
+  background-color: #0a3b91;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.products-dial-link {
+  font-size: 14px;
+  color: #0a3b91;
+  text-decoration: underline;
+}
+
+/* Separador sutil */
+.products-dial-sep {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #e5e9f2 50%, rgba(0,0,0,0) 100%);
+  margin: 24px 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .products-dial-wrap { grid-template-columns: 1fr; }
+  .products-dial-sidebar { position: static; }
+}
+@media (max-width: 768px) {
+  .products-dial-page { padding: 40px 16px 70px; }
+  .products-dial-grid { grid-template-columns: 1fr; }
+}
+
+
+/* FIN PAGINA PRODUCTOS */
+
 
   /* -----------------------------------------------------------------------------
   # Footer Styles
@@ -1112,7 +1354,6 @@ html {
     background-color: rgba(57, 148, 209, 1);
     content: "";
 }
-
 /*----- CONTACTO WIDGET -------*/
 h2.widget-title-contacto {
   font-size: 24px;
@@ -1164,7 +1405,6 @@ h2.widget-title-suscribite:after {
 .suscribe-button i {
   font-size: 16px;
 }
-
 /*----- FIN SUSCRIBITE WIDGET -------*/
 
 /*----- CENTRAL DE AYDUA -------*/
@@ -1187,7 +1427,6 @@ h2.widget-title-ayuda:after {
   content: "";
 }
 /*----- FIN CENTRAL DE AYUDA -------*/
-  
   .footer-box p {
     color: rgba(255, 255, 255, 1);
     line-height: 1.8;
@@ -1477,9 +1716,6 @@ h2.widget-title-ayuda:after {
     color: #367ec5;
   }
 
-  /* -----------------------------------------------------------------------------
-  # Hero Styles
-  ----------------------------------------------------------------------------- */
   html, body {
     height: 100%;
   }
@@ -1496,7 +1732,7 @@ h2.widget-title-ayuda:after {
   .row-header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* ← Esto separa logo y nav */
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -1650,9 +1886,6 @@ h2.widget-title-ayuda:after {
     color: #fff;
   }
   
-  /* -----------------------------------------------------------------------------
-  # List Styles
-  ----------------------------------------------------------------------------- */
   .row-home {
     width: 86%;
   }
@@ -1826,9 +2059,6 @@ h2.widget-title-ayuda:after {
     margin-top: 95px;
   }
 
-  /* -----------------------------------------------------------------------------
-  # About Page Styles
-  ----------------------------------------------------------------------------- */
   .valores-container {
     position: relative;
     top: 40px;

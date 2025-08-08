@@ -70,31 +70,90 @@
 		</div>
 	<!-- end header -->
 
-    <section class="contact-dial-section">
-        <div class="contact-dial-container">
-          <h1>Contacto</h1>
-          <p>Estamos a tu disposición. Completá el formulario o escribinos directamente.</p>
-      
-          <div class="contact-dial-content">
-            <!-- Formulario -->
-            <form class="contact-dial-form" action="https://formspree.io/f/xblkpyrw" method="POST">
-              <input type="text" name="name" placeholder="Nombre completo" required>
-              <input type="email" name="email" placeholder="Correo electrónico" required>
-              <input type="text" name="subject" placeholder="Asunto" required>
-              <textarea name="message" placeholder="Escribí tu mensaje aquí..." rows="5" required></textarea>
-              <button type="submit">Enviar mensaje</button>
-            </form>
-      
-            <!-- Datos de contacto -->
-            <div class="contact-dial-info">
-              <h3>Información de contacto</h3>
-              <p><strong>Email:</strong> contacto@nalonmedical.com</p>
-              <p><strong>Teléfono:</strong> +54 11 1234-5678</p>
-              <p><strong>Dirección:</strong> Av. Siempre 123, Buenos Aires, Argentina</p>
-            </div>
-          </div>
-        </div>
-      </section>
+	<section class="contact-dial-section">
+		<div class="contact-dial-container">
+		  <h1>CONTACTO</h1>
+		  <p>Estamos a tu disposición. Completá el formulario o escribinos directamente.</p>
+	  
+		  <div class="contact-dial-content">
+			<!-- Formulario -->
+			<form class="contact-dial-form" action="https://formspree.io/f/xblkpyrw" method="POST">
+			  <!-- Quién sos -->
+			  <select name="perfil" class="contact-dial-select" required>
+				<option value="" disabled selected>Quién sos</option>
+				<option>Paciente</option>
+				<option>Médico</option>
+				<option>Familiar / Cuidador</option>
+				<option>Otro</option>
+			  </select>
+	  
+			  <!-- Motivo -->
+			  <select name="motivo" class="contact-dial-select" required>
+				<option value="" disabled selected>Motivo de contacto</option>
+				<option>Consulta sobre diálisis peritoneal</option>
+				<option>Disponibilidad de productos</option>
+				<option>Soporte técnico (web / app)</option>
+				<option>Administración</option>
+			  </select>
+	  
+			  <!-- Campos básicos -->
+			  <input type="text" name="name" placeholder="Nombre completo" required>
+			  <input type="email" name="email" placeholder="Correo electrónico" required>
+			  <input type="text" name="subject" placeholder="Asunto" required>
+			  <textarea name="message" placeholder="Escribí tu mensaje aquí..." rows="5" required></textarea>
+	  
+			  <!-- Anti-spam (honeypot) -->
+			  <input type="text" name="_gotcha" style="display:none">
+	  
+			  <!-- Consentimiento + aviso legal -->
+			  <label class="contact-dial-consent">
+				<input type="checkbox" name="consentimiento" required>
+				Acepto el uso de mis datos para responder a esta consulta. No enviaré información clínica sensible.
+			  </label>
+			  <small class="contact-dial-legal">
+				Nalon Medical tratará sus datos conforme a la Ley 25.326 (AR). Este formulario no sustituye la atención médica.
+			  </small>
+	  
+			  <!-- (Opcional) redirección post-envío -->
+			  <!-- <input type="hidden" name="_redirect" value="https://tudominio.com.ar/gracias.html"> -->
+	  
+			  <button type="submit">Enviar mensaje</button>
+			</form>
+	  
+			<!-- Datos de contacto -->
+			<div class="contact-dial-info">
+			  <h3>Información de contacto</h3>
+			  <p><strong>Email:</strong> contacto@nalonmedical.com</p>
+			  <p><strong>Teléfono:</strong> +54 11 1234-5678</p>
+			  <p><strong>Dirección:</strong> Av. Siempre 123, Buenos Aires, Argentina</p>
+	  
+			  <!-- Canales por rol -->
+			  <p><strong>Pacientes:</strong> pacientes@nalonmedical.com</p>
+			  <p><strong>Médicos:</strong> medicos@nalonmedical.com</p>
+			  <p><strong>Soporte:</strong> soporte@nalonmedical.com</p>
+			  <p><strong>Horario:</strong> Lun–Vie 9:00–18:00 (ART)</p>
+	  
+			  <!-- Acciones rápidas -->
+			  <div class="contact-dial-quick">
+				<a href="tel:+541112345678" class="contact-dial-btn-quick">Llamar</a>
+				<a href="https://wa.me/5491112345678" class="contact-dial-btn-quick">WhatsApp</a>
+				<a href="mailto:info@nalonmedical.com" class="contact-dial-btn-quick">Enviar Email</a>
+			  </div>
+	  
+			  <!-- Mapa (opcional) -->
+			  <!--
+			  <div class="contact-dial-map">
+				<iframe
+				  src="https://www.google.com/maps/embed?pb=TU_EMBED_DE_MAPS"
+				  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			  </div>
+			  -->
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
       
       
 

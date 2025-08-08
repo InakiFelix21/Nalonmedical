@@ -141,4 +141,3 @@ document.addEventListener('DOMContentLoaded', function () {
     
         // Llama a la función cada vez que se redimensiona la ventana
         window.addEventListener('resize', updateTextContent);
-
