@@ -1386,7 +1386,114 @@ html {
   .pdetail-dial-hero h1 { font-size: 26px; }
 } */
 
-/* FIN PAGINA PRODUCTOS */
+/*------------- FIN PAGINA PRODUCTOS --------------*/
+/*-----------------  PAGINA ABOUT -----------------------*/
+
+.about-pro-container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* HERO con banda lateral */
+.about-pro-hero{
+  position:relative;
+  background:linear-gradient(180deg,#ffffff 0%,#f6f8fc 100%);
+  padding:60px 0 40px;border-bottom:1px solid #e9edf4;overflow:hidden
+}
+
+.about-pro-hero h1{
+  font-size:45px; color:#062356; margin:0 0 10px; letter-spacing:.5px; text-transform:uppercase
+}
+.about-pro-lead{color:#444;max-width:840px;line-height:1.6;font-size:16px}
+
+/* Stats */
+.about-pro-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:18px}
+.about-pro-stat{background:#fff;border:1px solid #e6eaf1;border-radius:12px;padding:16px 18px;min-width:220px}
+.about-pro-stat-n{display:block;font-size:28px;color:#062356;font-weight:600;letter-spacing:.3px}
+.about-pro-stat-l{display:block;color:#556070;font-size:14px}
+
+/* Pillars limpio */
+.about-pro-pillars{background:#ffffff;padding:42px 0}
+.about-pro-pillars-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.about-pro-card{
+  background:#fff;
+  border:1px solid #e6eaf1;
+  border-radius:12px;
+  box-shadow:0 4px 14px rgba(0,0,0,.05);
+  padding:22px;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.about-pro-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+.about-pro-card h2{
+  font-size:18px;
+  color:#062356;
+  margin:0 0 10px;
+  text-transform:uppercase;
+  letter-spacing:.3px;
+}
+.about-pro-card p{color:#444;line-height:1.65;margin:0}
+.about-pro-values.about-pro-values { color: #333; padding: 0 0 0 16px; line-height: 1.6; }
+.about-pro-values li{margin-bottom:6px}
+
+/* Imagen institucional + copy */
+.about-pro-imageband{background:#f8f9fc;padding:48px 0;border-top:1px solid #e9edf4;border-bottom:1px solid #e9edf4}
+.about-pro-imageband .about-pro-container{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.about-pro-imagebox{
+  background:linear-gradient(135deg,#eef3fb 0%,#ffffff 100%);
+  border:1px solid #e6eaf1;border-radius:14px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.06)
+}
+.about-pro-imagebox img{display:block;width:100%;height:auto}
+.about-pro-imagecopy h3{font-size:20px;color:#062356;margin:0 0 8px}
+.about-pro-imagecopy p{color:#444;line-height:1.7;margin:0 0 14px}
+.about-pro-btn{
+  display:inline-block;padding:10px 16px;background:#062356;color:#fff;border-radius:8px;text-decoration:none;font-weight:500;
+  transition:background-color .25s ease,box-shadow .25s ease,transform .02s ease
+}
+.about-pro-btn:hover{background:#0a3b91;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.about-pro-btn:active{transform:translateY(1px)}
+.about-pro-btn--sec{background:#0a3b91}
+.about-pro-btn--sec:hover{background:#0d4ebb}
+
+/* Timeline minimal */
+.about-pro-timeline{background:#ffffff;padding:48px 0}
+.about-pro-timeline h2{font-size:20px;color:#062356;margin:0 0 18px;text-transform:uppercase;letter-spacing:.3px}
+.about-pro-tl{position:relative;padding-left:24px}
+.about-pro-tl:before{
+  content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(#d8e1f0,#e9edf4)
+}
+.about-pro-tl-item{position:relative;margin:16px 0}
+.about-pro-tl-dot{
+  position:absolute;left:1px;top:.4em;width:14px;height:14px;border-radius:50%;
+  background:#062356;box-shadow:0 0 0 4px rgba(6,35,86,.08)
+}
+.about-pro-tl-content{background:#f9fbff;border:1px solid #e2e9f8;border-radius:10px;padding:12px 14px}
+.about-pro-tl-content h4{margin:0 0 6px;color:#062356;font-size:16px}
+.about-pro-tl-content p{margin:0;color:#444;line-height:1.6}
+
+/* CTA */
+.about-pro-cta{background:#f8f9fc;padding:36px 0;border-top:1px solid #e9edf4}
+.about-pro-cta-grid{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.about-pro-cta h3{margin:0 0 6px;color:#062356;font-size:20px}
+.about-pro-cta p{margin:0;color:#444}
+.about-pro-cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Responsive */
+@media (max-width:1024px){
+  .about-pro-pillars-grid{grid-template-columns:1fr}
+  .about-pro-imageband .about-pro-container{grid-template-columns:1fr}
+}
+@media (max-width:768px){
+  .about-pro-hero{padding:46px 0 28px}
+  .about-pro-hero h1{font-size:28px}
+  .about-pro-stats{gap:14px}
+  .about-pro-pillars{padding:36px 0}
+  .about-pro-cta-grid{grid-template-columns:1fr}
+}
+
 
 
   /* -----------------------------------------------------------------------------
