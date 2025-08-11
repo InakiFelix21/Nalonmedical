@@ -1375,33 +1375,23 @@ html {
 .pdetail-dial-btn--sec { background-color: #0a3b91; }
 .pdetail-dial-btn--sec:hover { background-color: #062356; }
 
-/* Responsive */
-/* @media (max-width: 1024px) {
-  .pdetail-dial-layout { grid-template-columns: 1fr; }
-  .pdetail-dial-aside { position: static; }
-  .pdetail-dial-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 768px) {
-  .pdetail-dial-hero { padding: 40px 0 28px; }
-  .pdetail-dial-hero h1 { font-size: 26px; }
-} */
-
 /*------------- FIN PAGINA PRODUCTOS --------------*/
 /*-----------------  PAGINA ABOUT -----------------------*/
 
-.about-pro-container{max-width:1100px;margin:0 auto;padding:0 20px}
+.about-pro-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+}
 
 /* HERO con banda lateral */
-.about-pro-hero{
-  position:relative;
-  background:linear-gradient(180deg,#ffffff 0%,#f6f8fc 100%);
-  padding:60px 0 40px;border-bottom:1px solid #e9edf4;overflow:hidden
-}
+.about-pro-container{max-width:1100px;margin:0 auto;padding:0 20px;font-family:"Montserrat",sans-serif}
 
-.about-pro-hero h1{
-  font-size:45px; color:#062356; margin:0 0 10px; letter-spacing:.5px; text-transform:uppercase
-}
-.about-pro-lead{color:#444;max-width:840px;line-height:1.6;font-size:16px}
+/* HERO con banda lateral */
+.about-pro-hero{position:relative;background:linear-gradient(180deg,#ffffff 0%,#f6f8fc 100%);padding:60px 0 40px;border-bottom:1px solid #e9edf4;overflow:hidden;font-family:"Montserrat",sans-serif}
+.about-pro-hero h1{font-size:45px;color:#062356;margin:0 0 10px;letter-spacing:.5px;text-transform:uppercase;font-family:"Montserrat",sans-serif}
+.about-pro-lead{color:#444;max-width:840px;line-height:1.6;font-size:16px;font-family:"Montserrat",sans-serif}
 
 /* Stats */
 .about-pro-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:18px}
@@ -1410,33 +1400,13 @@ html {
 .about-pro-stat-l{display:block;color:#556070;font-size:14px}
 
 /* Pillars limpio */
-.about-pro-pillars{background:#ffffff;padding:42px 0}
-.about-pro-pillars-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.about-pro-card{
-  background:#fff;
-  border:1px solid #e6eaf1;
-  border-radius:12px;
-  box-shadow:0 4px 14px rgba(0,0,0,.05);
-  padding:22px;
-  transition:transform .25s ease, box-shadow .25s ease;
-}
-.about-pro-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
-}
-.about-pro-card h2{
-  font-size:18px;
-  color:#062356;
-  margin:0 0 10px;
-  text-transform:uppercase;
-  letter-spacing:.3px;
-}
+.about-pro-pillars{background:#fff;padding:42px 0}
+.about-pro-pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.about-pro-card{background:#fff;border:1px solid #e6eaf1;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.05);padding:22px;transition:transform .25s ease,box-shadow .25s ease;text-align:center}
+.about-pro-card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.about-pro-card h2{font-size:20px;color:#062356;margin:0 0 10px;text-transform:uppercase;letter-spacing:.3px;font-weight:600}
 .about-pro-card p{color:#444;line-height:1.65;margin:0}
-.about-pro-values.about-pro-values { color: #333; padding: 0 0 0 16px; line-height: 1.6; }
+.about-pro-values{color:#333;padding:0;line-height:1.6;list-style:inside}
 .about-pro-values li{margin-bottom:6px}
 
 /* Imagen institucional + copy */
@@ -1458,28 +1428,20 @@ html {
 .about-pro-btn--sec{background:#0a3b91}
 .about-pro-btn--sec:hover{background:#0d4ebb}
 
-/* Timeline minimal */
-.about-pro-timeline{background:#ffffff;padding:48px 0}
-.about-pro-timeline h2{font-size:20px;color:#062356;margin:0 0 18px;text-transform:uppercase;letter-spacing:.3px}
-.about-pro-tl{position:relative;padding-left:24px}
-.about-pro-tl:before{
-  content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(#d8e1f0,#e9edf4)
-}
-.about-pro-tl-item{position:relative;margin:16px 0}
-.about-pro-tl-dot{
-  position:absolute;left:1px;top:.4em;width:14px;height:14px;border-radius:50%;
-  background:#062356;box-shadow:0 0 0 4px rgba(6,35,86,.08)
-}
-.about-pro-tl-content{background:#f9fbff;border:1px solid #e2e9f8;border-radius:10px;padding:12px 14px}
-.about-pro-tl-content h4{margin:0 0 6px;color:#062356;font-size:16px}
-.about-pro-tl-content p{margin:0;color:#444;line-height:1.6}
+/* ===== Calidad y Cumplimiento ===== */
+.about-quality{background:#fff;padding:48px 0;border-top:1px solid #e9edf4;text-align:center}
+.about-quality-title{font-size:30px;color:#062356;text-transform:uppercase;letter-spacing:.3px;margin:0 0 12px;font-weight:700}
+.about-quality-intro{color:#444;max-width:800px;margin:0 auto 24px;line-height:1.7;font-size:15px}
+.about-quality-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.about-quality-card{background:#fff;border:1px solid #e6eaf1;border-radius:12px;padding:20px;box-shadow:0 4px 14px rgba(0,0,0,.05);transition:transform .25s ease,box-shadow .25s ease;text-align:left}
+.about-quality-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.about-quality-badge{display:inline-block;background:#062356;color:#fff;border-radius:999px;padding:6px 10px;font-weight:600;font-size:12px;letter-spacing:.6px;margin-bottom:8px}
+.about-quality-card h3{margin:0 0 8px;font-size:18px;color:#062356;font-weight:600}
+.about-quality-card ul{margin:0 0 0 18px;color:#333;line-height:1.6}
+.about-quality-card li{margin-bottom:6px}
+.about-quality-note{margin-top:24px;border:1px solid #e6eaf1;background:#f9fbff;border-radius:12px;padding:16px 18px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+.about-quality-note p{margin:0;color:#444;line-height:1.6;font-size:14px}
 
-/* CTA */
-.about-pro-cta{background:#f8f9fc;padding:36px 0;border-top:1px solid #e9edf4}
-.about-pro-cta-grid{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
-.about-pro-cta h3{margin:0 0 6px;color:#062356;font-size:20px}
-.about-pro-cta p{margin:0;color:#444}
-.about-pro-cta-actions{display:flex;gap:12px;flex-wrap:wrap}
 
 /* Responsive */
 @media (max-width:1024px){
