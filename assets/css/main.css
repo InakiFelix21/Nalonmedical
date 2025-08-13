@@ -350,24 +350,24 @@ html {
   /* Slide-bar styles */
   .sidenav {
     height: 100%;
-    width: 0;
+    width: 0px;
     position: fixed;
     z-index: 1000;
-    background-color: rgba(57, 148, 209, 0.928);
+    background-color: #062356;
     overflow-x: hidden;
     transition: 0.9s;
     padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 0px 0px 0px 21px;
+  padding: 0px 0px 0px 19px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 1);
   display: block;
   transition: 0.6s;
   font-family: "Montserrat", sans-serif;
-  margin: 18px 0;
+  margin: 11px 0;
 }
 
 .sidenav a:hover {
@@ -376,9 +376,11 @@ html {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: -10px;
+  right: 12px;
   font-size: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-toggle {
@@ -391,11 +393,11 @@ html {
 }
 
 .close-container {
-  padding-top: 12px;
+  padding-top: 0;
 }
 
 .links-container {
-  padding-top: 20px; 
+  padding-top: 0; 
 }
   
   .container {
@@ -1673,11 +1675,23 @@ FIN POLITICA DE CALIDAD
   
   .footer-area {
     background-color: #062356;
-    padding: 50px 0 30px 0;
+    padding: 50px 0 30px 80px;
+  }
+
+  .footer-area .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-area .col-lg-3 {
+    flex: 1 1 25%;
+    max-width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   .col-lg-3.col-md-6.contacto-footer {
-    padding: 0 10px 0 0;
+    padding: 15px;
 }
   
   h2.widget-title {
@@ -1708,13 +1722,30 @@ h2.widget-title-suscribite {
   color: rgba(255, 255, 255, 1);
 }
 
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #aeaeae93;
+  border-radius: 10px 0 0 10px; /* solo bordes izquierdos redondeados */
+  outline: none;
+}
+
 .suscribe-button {
   background-color: #05307a;
-  border: none;
-  padding: 8px 16px 7px 14px;
-  border-radius: 10px;
   border: 1px solid #aeaeae93;
+  border-radius: 10px 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .suscribe-button i {
   font-size: 16px;
   color: #ffffff;
@@ -1756,22 +1787,12 @@ h2.widget-title-ayuda {
   .footer-box.subscribe form input[type=email] {
     border: none;
     background-color: rgba(255, 255, 255, 0.46);
-    width: 78%;
-    padding: 6px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-  }
-
-  .footer-box.subscribe form input[type=email] {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.46);
     width: 79%;
-    padding: 5px;
+    padding: 9px;
     border-radius: 8px;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
+    margin-right: 4px;
   }
   
   .footer-box.subscribe form input[type=email]::placeholder {
@@ -1920,16 +1941,6 @@ h2.widget-title-ayuda {
     color: #367ec5;
   }
   
-  div.owl-controls, .owl-controls div {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  div.owl-controls div.owl-nav div:hover {
-    opacity: 0.7;
-  }
-  
   .pagination-wrap ul li a {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -2023,6 +2034,7 @@ h2.widget-title-ayuda {
 
   html, body {
     height: 100%;
+    margin: 0;
   }
 
   .hero-bg {
@@ -2063,6 +2075,8 @@ h2.widget-title-ayuda {
   
   .hero-text-tablecell {
     display: table-cell;
+    vertical-align: middle;
+    text-align: center;
   }
 
   .hero-area {

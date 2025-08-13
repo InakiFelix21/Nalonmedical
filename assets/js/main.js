@@ -122,22 +122,3 @@ document.addEventListener('DOMContentLoaded', function () {
         // Llama a la función cada vez que se redimensiona la ventana
         window.addEventListener('resize', updateTextContent);
 
-    function updateTextContent() {
-        var h3 = document.querySelector('.content-column-h3');
-        var span = document.querySelector('.h3-span');
-        var windowWidth = window.innerWidth;
-    
-        if (windowWidth <= 768) { // Cambia el texto en pantallas menores a 768px
-            h3.innerHTML = 'Tecnología <span class="h3-span"> Blow-Fill-Seal</span>'; // Texto combinado con <span>
-            span.style.display = 'none'; // Asegúrate de que el <span> se muestre
-        } else {
-            h3.textContent = 'Tecnología'; // Texto original del h3
-            span.textContent = 'Blow-Fill-Seal'; // Texto original del span
-            span.style.display = 'inline'; // Asegúrate de que el <span> se muestre
-        }
-    }
-        // Llama a la función al cargar la página
-        updateTextContent();
-    
-        // Llama a la función cada vez que se redimensiona la ventana
-        window.addEventListener('resize', updateTextContent);
