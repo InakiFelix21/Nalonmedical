@@ -409,8 +409,8 @@ html {
 
   .top-header-area {
     width: 100%;
-    padding: 3px 0;
-    background-color: #fafafb;
+    padding: 19px 0 16px 0;
+    background-color: #ffffff;
     border-bottom: 1px solid #062356;
     z-index: 1000;
     position: relative;
@@ -516,7 +516,7 @@ html {
   }
   .site-logo img {    
     float: left;
-    max-width: 50%;
+    max-width: 25%;
     position: relative;
   }
   ul.sub-menu li:last-child {
@@ -880,7 +880,7 @@ html {
   }
   
   .dialisis-section h2 {
-    font-size: 36px;
+    font-size: 39px;
     color: #062356;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
