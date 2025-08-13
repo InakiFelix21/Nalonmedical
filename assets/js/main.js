@@ -115,10 +115,3 @@ document.addEventListener('DOMContentLoaded', function () {
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
-
-        // Llama a la función al cargar la página
-        updateTextContent();
-    
-        // Llama a la función cada vez que se redimensiona la ventana
-        window.addEventListener('resize', updateTextContent);
-
