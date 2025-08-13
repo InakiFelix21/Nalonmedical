@@ -107,6 +107,9 @@
 	}
 	.site-logo {
 	    text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.mean-container .mean-bar {
 		z-index: 2;
@@ -118,7 +121,7 @@
 	    text-align: center;
 	}
 	.top-header-area {
-	    padding: 15px 0;
+	    padding: 30px 0;
 	}
 	.responsive-menu-wrap {
 	    position: absolute;
@@ -141,6 +144,7 @@
 	.hero-form .hero-text p.subtitle {
 	    font-size: 13px;
 	}
+
 	.hero-form .hero-btns a.bordered-btn {
 	    margin-left: 0;
 	    margin-top: 20px;
@@ -225,9 +229,9 @@
         display: block;
 		font-size: 36px;
         cursor: pointer;
-        color: #ffffff;
+        color: #062356;
         position: absolute;
-        top: -4px;
+        top: -7px;
         left: 8px;
     }
 	.list-section {
@@ -307,7 +311,7 @@
     }
 
 	.hero-area {
-		height: 33%;
+		height: 29%;
 		position: relative;
 		z-index: 1;
 	}
@@ -318,20 +322,25 @@
 	}
 
 	.hero-text h1 {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 22px;
-        color: rgba(255, 255, 255, 1);
+        color: #062356;
         font-family: "Montserrat", sans-serif;
-        font-weight: 600;
+        font-weight: 700;
         font-style: normal;
         right: 0;
         top: 20px;
-		margin: 0;
+		margin: 40px 0 0 0;
 	}
-	.hero-text-span {
-        font-size: 17px;
-        color: rgba(255, 255, 255, 1);
-        font-weight: 350;
+	
+	.hero-subtitle {
+		font-size: 10px;
+	}
+
+	.hero-text .hero-button{
+		margin-top: 10px;
+		padding: 9px;
+		font-size: 9px;
 	}
 
 	nav.main-menu ul li {
@@ -355,8 +364,7 @@
 	}
 
 	.top-header-area {
-	    padding: 15px 0;
-		padding: 0;
+	    padding: 10px 0;
 		box-shadow: none;
 		background-color: none;
 	}
@@ -791,7 +799,7 @@
  .site-logo-contact img {
 	right: 0;
 	width: 81%;
-	float: left;
+	float: none;
  }
 
  .site-logo-about img {
@@ -800,107 +808,7 @@
 	float: none;
 	margin: 3px 0 0px 0;
  }
-/* ---------------------- CONTAINER HIST --------------------- */
 
-.separador-1 {
-	position: relative;
-    padding-bottom: 68px;
-    margin: 0px 0 48px 0;
-}
-.container-hist {
-	margin: 10px 25px 0 25px;
-}
-
-.container-hist h1 {
-	font-size: 26px;
-	line-height: 30px;
-	margin: 18px 0 40px 20px;
-}
-.container-hist .left h3 {
-	text-align: right;
-	margin: 40px 39px 0 0;
-	font-size: 14px;
-	left: 0;
-}
-
-.container-hist .right h3 {
-    font-size: 14px;
-    left: 0;
-	margin-left: 41px;
-}
-
-.right-1983 h3 {
-    margin: 0 0 2px 37px;
-}
-
-.right-2024 h3 {
-	margin: 5vh 0 2px 37px;
-}
-
-.right-2007 h3 {
-	margin: 7vh 0 0px 37px;
-}
-
-.left-2015 h3 {
-    color: rgba(73, 157, 213, 1);
-    margin-top: 75px;
-}
-
-.left, .right {
-	width: 90%;
-	margin: 0px 3px;
-	bottom: 0;
-}
-
-.left h3, .right h3 {
-	font-size: 18px;
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.left p, .right p {
-	font-size: 9px;
-	line-height: 13px;
-	font-weight: 400;
-}
-
-.left p {
-	text-align: right;
-	margin: 6px 16px 0px 0px;
-}
-
-.right p {
-	margin: 6px 0px 0px 14px;
-}
-
-.left-2015 {
-	margin-top: 40px;
-}
-
-.arrow {
-	font-size: 16px;
-}
-
-.right-arrow {
-	margin: 9px 1px 0 5px;
-	width: 26px;
-	left: 0;
-}
-
-.left-arrow {
-	right: 0px;
-	bottom: 0;
-	margin: 10px 1px 0 5px;
-	width: 26px;
-	transform: none;
-}
-
-.divider {
-	width: 33px;
-	border-radius: 10px;
-	margin: 0px 0;
-}
-/*------------- FIN HIST ------------*/
 .shop-banner {
     background-color: rgba(245, 245, 245, 1);
     margin: 22px 0 0px 0;
@@ -1112,14 +1020,10 @@
         align-items: center;
     }
 
-
-
-    /* Eliminar float y position en responsive */
     .site-logo img {
-        float: none;
-        width: 85%;
-        right: 0;
-        margin: 3px 0 5px 0;
+        float: right;
+        max-width: 33%;
+        margin: 5px 10px 5px 0;
         position: unset;
     }
 
@@ -1146,9 +1050,7 @@
         padding-bottom: 0;
 	}
 
-	p.testimonial-body {
-	    font-size: 15px;
-	}
+
 	.responsive-menu {
 	    left: auto;
 	    right: 0;
@@ -1158,11 +1060,7 @@
 	    padding: 0;
 	}
 
-	a.video-play-btn {
-	    right: auto;
-	    left: 50%;
-	    margin-left: -45px;
-	}
+
 
 	/*------------------ FOOTER AREA -----------------*/
 	.footer-area {
