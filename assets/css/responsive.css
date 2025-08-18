@@ -328,7 +328,7 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-style: normal;
-        margin: 35px 0 0 36px;
+        margin: 45px 0 0 36px;
         width: 80%;
 	}
 	
@@ -391,7 +391,7 @@
    }
 /*-------------------------- DIALISIS --------------------------*/
 .tarjetas-dialisis {
-    gap: 35px;
+    gap: 25px;
 } 
 .dialisis-section {
     padding: 30px 20px;
@@ -402,7 +402,7 @@
     margin-bottom: 37px;
 }
 .card-dialisis {
-	padding: 25px 8px;
+	padding: 22px 8px;
 	width: 275px;
 }
 .card-dialisis i {
@@ -423,7 +423,7 @@
 }
 /*-------------------------- SOBRE NOSOTROS INICIO --------------------------*/
 .sobre-nosotros-section {
-    padding: 40px 20px;
+    padding: 30px 20px;
 	text-align: center;
 }
 .container-nosotros-columns {
@@ -438,11 +438,14 @@
 }
 .nosotros-bloques h3 {
 	font-weight: 600;
-	margin-bottom: 7px;
-	font-size: 18px;
+	margin-bottom: 4px;
+	font-size: 19px;
+	text-decoration: underline;
 }
 .nosotros-bloques p {
     font-size: 12px;
+	padding: 0 26px;
+	font-weight: 350;
 }
 /*-------------------------- FIN SOBRE NOSOTROS INCIO --------------------------*/
 /*-------------------------- PRODUCTOS INICIO --------------------------*/
@@ -1048,7 +1051,7 @@
 	}
 	.footer-area .col-lg-3 {
         max-width: 50%;
-        padding: 11px;
+        padding: 13px;
         box-sizing: border-box;
 	}
 	.footer-box {
@@ -1069,7 +1072,7 @@
 	.footer-box ul li a {
 		color: rgba(255, 255, 255, 1);
 		font-family: "Montserrat", sans-serif;
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: 300;
 	}
     .footer-box ul,
@@ -1080,7 +1083,7 @@
     transition: max-height 1.0s ease-in-out; 
     }
 	.footer-box p {
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: 300;
 	}
     .footer-box.active ul,
@@ -1123,14 +1126,14 @@
 /*---------- SUSCRIBITE ----------*/
 .footer-box.subscribe form input[type=email] {
     padding: 6px;
-    font-size: 13px;
+    font-size: 12px;
 	margin-right: 3px;
 }
 .suscribe-button {
     padding: 7px 13px;
 }
 .suscribe-button i {
-    font-size: 13px;
+    font-size: 12px;
 }
 h2.widget-title-suscribite {
 	font-size: 17px;
@@ -1165,6 +1168,7 @@ h2.widget-title-suscribite:after {
 .footer-box.active-suscribite p,
 .footer-box.active-suscribite form {
 max-height: 45px; 
+margin-top: 27px;
 }
 /*----------- FIN SUSCRIBITE -------------*/
 /*----------- CENTRAL DE AYUDA -------------*/

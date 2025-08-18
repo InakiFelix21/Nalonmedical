@@ -806,6 +806,9 @@ html {
   .sobre-nosotros-section {
     padding: 60px 20px;
     background-color: #f3f6fb;
+    border-top:1px solid #e9edf4;
+    border-bottom:1px solid #e9edf4;
+    font-family:"Montserrat",sans-serif;
   }
   
   .container-nosotros-columns {
@@ -820,18 +823,39 @@ html {
   .col-nosotros-texto {
     flex: 1;
     min-width: 300px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
   }
   
   .col-nosotros-texto h2 {
-    font-size: 36px;
+    font-size: 43px;
     color: #062356;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 650;
+    margin-bottom: 30px;
+    text-transform:uppercase;
+    letter-spacing:.2px;
+  }
+  .col-nosotros-texto h2::after{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 2px;
+    background :#062356;
+    border-radius: 2px;
+    margin: 12px 0 6px;
+    opacity: .9;
+  }
+  .col-nosotros-texto p{
+    margin:0 0 12px;
+    color:#444;
+    font-size:16px;
+    line-height:1.7;
+    max-width:760px;
   }
   
   .col-nosotros-texto .intro {
-    font-size: 18px;
+    font-size: 16px;
     color: #444;
     margin-bottom: 30px;
     line-height: 1.6;
@@ -862,8 +886,11 @@ html {
   
   .col-nosotros-img img {
     max-width: 100%;
-    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius:12px;
+    background:linear-gradient(135deg,#eef3fb 0%,#ffffff 100%);
+    border:1px solid #e6eaf1;
+    box-shadow:0 8px 22px rgba(0,0,0,.06);
   }
   /*------------ FIN SONRE NOSOTROS INICIO ------------*/
 
@@ -944,17 +971,18 @@ html {
 
   /*---------------- PRODUCTOS ----------------*/
   .productos-premium-section {
-    padding: 80px 20px;
+    padding: 90px 20px;
     text-align: center;
     background-color: #ffffff;
   }
   
   .productos-premium-section h2 {
-    font-size: 36px;
+    font-size: 41px;
     color: #062356;
     margin-bottom: 60px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    text-transform: uppercase;
   }
   
   .tarjeta-producto {
