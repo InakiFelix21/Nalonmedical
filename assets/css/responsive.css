@@ -709,15 +709,17 @@
     /* max-width: 0; */
     margin: 0;
     display: grid;
-    grid-template-columns: 130px 1fr;
+    grid-template-columns: 1fr; /* antes: 130px 1fr */
     gap: 10px;
 }
 .products-dial-sidebar{
     padding: 5px 0px 0 6px;
+    position: static; /* asegura que no quede sticky en responsive */
+	margin: 20px 5px 0 5px;
 }
 .products-dial-sidebar h2 {
     font-size: 16px;
-	margin: 0 0 5px 0;
+    margin: 0 0 5px 0;
 }
 .products-dial-nav {
     gap: 0px;
@@ -728,22 +730,23 @@
     line-height: 1.4;
 }
 .products-dial-content h1 {
-	font-size: 20px;
-	text-align: center;
-	line-height: 1.4;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.4;
+    margin: 20px 0 6px 0;
 }
 .products-dial-header p {
-	text-align: center;
-	margin-bottom: 16px;
-	font-size: 11px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 11px;
 }
 .products-dial-section {
-	padding: 13px;
+    padding: 13px;
 }
 .products-dial-section-head h2 {
-	font-size: 15px;
-	text-align: center;
-	line-height: 1.3;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.3;
 }
 .products-dial-section-body p {
     color: #444;
@@ -751,7 +754,7 @@
     font-size: 11px;
 }
 .products-dial-bullets {
-	margin: 8px 0 7px 0px;
+    margin: 8px 0 7px 0px;
 }
 .products-dial-bullets li {
     margin-bottom: 6px;
@@ -759,8 +762,8 @@
     line-height: 1.4;
 }
 .products-dial-grid {
-	grid-template-columns: 1fr;
-	gap: 0px;
+    grid-template-columns: 1fr;
+    gap: 0px;
 }
 .products-dial-item {
     background: #f8f9fc;
@@ -785,10 +788,10 @@
     justify-content: center;
 }
 .products-dial-btn {
-	width: 55%;
-	text-align: center;
-	font-size: 11px;
-	padding: 5px 0px;
+    width: 55%;
+    text-align: center;
+    font-size: 11px;
+    padding: 5px 0px;
 }
 /* --------------- FIN PRODUCTOS PAGE -------------- */
 .container-calidad {
