@@ -53,17 +53,24 @@
 		</div>
 	</div>
 		<!-- Slide-bar Menu -->
-		<div id="mySidenav" class="sidenav">
-			<div class="close-container">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			</div>
-			<div class="links-container">
-				<a href="./index.html">INICIO</a>
-				<a href="./unidad.html">SERVICIOS</a>
-				<a href="./productos.html">PRODUCTOS</a>
-				<a href="./contact.html">CONTACTO</a>
-			</div>
+		<div id="sidenavOverlay" class="sidenav-overlay" onclick="closeNav()"></div>
+
+		<!-- Sidenav -->
+		<div id="mySidenav" class="sidenav" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="sidenavTitle" tabindex="-1">
+		  <div class="sidenav-header">
+			<span id="sidenavTitle" class="sidenav-title">Menú</span>
+			<button class="closebtn" type="button" aria-label="Cerrar menú" onclick="closeNav()">&times;</button>
+		  </div>
+		
+		  <nav class="links-container" role="navigation">
+			<a href="./index.html">INICIO</a>
+			<a href="./about.html">SERVICIOS</a>
+			<a href="./productos.html">PRODUCTOS</a>
+			<a href="./about.html" class="is-active">SOBRE NOSOTROS</a>
+			<a href="./contact.html">CONTACTO</a>
+		  </nav>
 		</div>
+	<!-- Fin Slide-bar Menu -->
 	<!-- end header -->
     
 	<section class="about-pro-hero">
