@@ -713,62 +713,68 @@
     gap: 10px;
 }
 .products-dial-sidebar{
-	padding: 9px 3px 8px 3px;
+	/* padding: 9px 3px 8px 3px;
 	position: static;
-	margin: 20px 15px 0px 15px;
+	margin: 20px 15px 0px 15px; */
+	display: none;
 }
 .products-dial-sidebar h2 {
-	font-size: 21px;
+	/* font-size: 21px;
 	margin: 5px 0 15px 0;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: uppercase; */
+	display: none;
 }
 .products-dial-nav {
-    gap: 0px;
+    /* gap: 0px; */
+	display: none;
 }
 .products-dial-nav a {
-	padding: 7px 10px;
+	/* padding: 7px 10px;
 	font-size: 11px;
 	line-height: 1.4;
-	border: 1px solid #e0e8f5;
-	margin: 1px 0;
-	/* background-color: #e0e8f540; */
+	margin: 1px 0; */
+	display: none;
 }
 .products-dial-content h1 {
-    /* font-size: 20px;
+    font-size: 22px;
     text-align: center;
     line-height: 1.4;
-    margin: 20px 0 6px 0; */
-	display: none;
+    margin: 45px 0 6px 0;
 }
 .products-dial-header p {
-    /* text-align: center;
-    margin-bottom: 16px;
-    font-size: 11px; */
-	display: none;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 10px;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
 }
 .products-dial-section {
-	padding: 13px 20px;
+	padding: 19px 20px;
 	margin: 20px 25px;
 }
 .products-dial-section-head h2 {
 	font-size: 15px;
-	text-align: center;
+	text-align: left;
 	line-height: 1.3;
+	font-weight: 700;
+	margin: 3px 0 12px 0;
 }
 .products-dial-section-body p {
     color: #444;
-    line-height: 1.6;
-    font-size: 11px;
+    line-height: 1.4;
+    font-size: 10px;
 }
 .products-dial-bullets {
-	margin: 8px 0 7px 20px;
+	margin: 8px 0 7px 16px;
 	padding: 0;
 }
 .products-dial-bullets li {
     margin-bottom: 6px;
     font-size: 10px;
     line-height: 1.2;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
 }
 .products-dial-grid {
     grid-template-columns: 1fr;
@@ -788,7 +794,7 @@
 	color: #444;
 	margin: 1px 0 20px 0;
 	line-height: 1.0;
-	font-size: 10px;
+	font-size: 9px;
     -webkit-font-smoothing: antialiased;
 }
 .products-dial-actions {
@@ -873,11 +879,38 @@
 /* --------------- FIN CONTACT PAGE -------------- */
 /* -------------------------------------------------------- */
 
+/* ---------------  CONTACT PAGE -------------- */
+/* -------------------------------------------------------- */
+.about-pro-container {
+    max-width: 100%;
+}
+.about-pro-hero h1 {
+	font-size: 26px;
+}
+.about-pro-lead {
+	max-width: 97%;
+	line-height: 1.4;
+	font-size: 10px;
+	margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.about-pro-card {
+	padding: 20px 19px 25px 19px;
+	margin: 0 26px;
+}
+.about-pro-card h2 {
+	font-size: 17px;
+	margin: 0 0 2px 0;
+}
+.about-pro-card p {
+    line-height: 1.4;
+	font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+}
 
 
-
-
-
+/* ---------------  FIN CONTACT PAGE -------------- */
+/* -------------------------------------------------------- */
 
     .main-menu-wrap {
         display: flex;
@@ -885,25 +918,21 @@
 		text-align: center;
         align-items: center;
     }
-
     .site-logo img {
         float: right;
         max-width: 33%;
         margin: 5px 10px 5px 0;
         position: unset;
     }
-
 	.responsive-menu-wrap {
 	    top: -35px;
 	}
-
 	span.close-btn {
 		right: 35px;
 	}
 	.header-icons {
 	    text-align: center;
 	}
-
 	.hero-text p.subtitle {
 	    font-size: 10px;
 	}
@@ -921,7 +950,6 @@
 	.featured-section {
 	    padding: 0;
 	}
-
 	/*------------------ FOOTER AREA -----------------*/
 	.footer-area {
 		padding: 16px 0 0 0;

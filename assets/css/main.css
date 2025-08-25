@@ -1269,10 +1269,10 @@ body.nav-open{ overflow: hidden; }
   background: #eef3fb;
   border-color: #e0e8f5;
 }
-/* .products-dial-nav a.active {
+.products-dial-nav a.active {
   background: #e9f0fb;
   border-color: #d6e3fa;
-} */
+}
 
 /* Contenido */
 .products-dial-content h1 {
