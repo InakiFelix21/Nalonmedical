@@ -1532,13 +1532,7 @@ body.nav-open{ overflow: hidden; }
   .about-pro-pillars-grid{grid-template-columns:1fr}
   .about-pro-imageband .about-pro-container{grid-template-columns:1fr}
 }
-@media (max-width:768px){
-  .about-pro-hero{padding:46px 0 28px}
-  .about-pro-hero h1{font-size:28px}
-  .about-pro-stats{gap:14px}
-  .about-pro-pillars{padding:36px 0}
-  .about-pro-cta-grid{grid-template-columns:1fr}
-}
+
 
 /*--------------------- DEXTROSA 1.5%  -------------------*/
 /* ===== Detalle de producto (plantilla) ===== */
