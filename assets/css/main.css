@@ -282,70 +282,6 @@ html {
     margin-bottom: 70px;
   }
   
-  .breadcrumb-bg-about {
-    background-image: url(../img/Copia\ de\ sobre-nosotros.png);
-    background-size: cover;
-    background-position: center;
-    height: 82%;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .breadcrumb-section-about:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-color: #2975afe0;
-    z-index: -1;
-    opacity: 0.8;
-  }
-  
-  .breadcrumb-text {
-    position: relative;
-    top: 40px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-  }
-  .breadcrumb-text img {
-    width: 60px;
-  }
-  
-  .breadcrumb-text h1 {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 1.3;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    position: relative;
-    margin-top: 40px;
-  }
-  
-  .breadcrumb-text-span {
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 1.3;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    position: relative;
-    margin-left: 5px;
-  }
-  
-  .breadcrumb-section {
-    padding: 150px 0;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    z-index: 1;
-    background-attachment: fixed;
-    padding-top: 200px;
-  }
   /* ------------------ */
   /* Slide-bar styles */
 /* Overlay */
@@ -831,7 +767,7 @@ body.nav-open{ overflow: hidden; }
   }
 
   .sobre-nosotros-section {
-    padding: 60px 20px;
+    padding: 50px 20px;
     background-color: #f3f6fb;
     border-top:1px solid #e9edf4;
     border-bottom:1px solid #e9edf4;
@@ -936,7 +872,7 @@ body.nav-open{ overflow: hidden; }
   }
   
   .dialisis-section h2 {
-    font-size: 39px;
+    font-size: 45px;
     color: #062356;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -2389,6 +2325,26 @@ h2.widget-title-ayuda {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .hero-about-button:hover {
+    transform: translateY(-3px);
+    color: #fff;
+  }
+  .hero-about-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 9px 22px;
+    background-color: #062356;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     border: none;
     border-radius: 8px;
     text-decoration: none;
