@@ -2815,95 +2815,6 @@ h2.widget-title-ayuda {
 }
 
 /*----------- FIN FORM UNIDAD -----------*/
-
-/*--------- POLITICA DE CALIDAD ---------*/
-.unidad-politica-section {
-  background-color: rgba(245, 245, 245, 1);
-  margin: 42px 0;
-}
-
-.unidad-politica-content {
-  display: flex;
-  margin: 70px 0 45px 0;
-  align-items: center;
-  padding: 45px 0;
-}
-
-.unidad-politica-section img {
-  background-color: rgba(245, 245, 245, 1);
-  content: url('../img/politica-img.png');
-  background-size: cover;
-  margin: 0 70px 0 0px;
-  width: 85%;
-}
-
-.unidad-politica-text{
-  display: flex;
-  flex-direction: column; 
-}
-
-.unidad-politica-text h3 {
-font-family: "Montserrat", sans-serif;
-color: rgba(57, 148, 209, 1);
-font-size: 35px;
-font-weight: 350;
-}
-
-.unidad-politica-text p {
-padding: 0px 83px 0px 0px;
-font-family: "Montserrat", sans-serif;
-font-weight: 300;
-font-size: 17px;
-color: rgba(30, 30, 30, 1);
-line-height: 27px;
-}
-
-.separador-politica {
-  position: relative;
-  padding: 12px;
-}
-.separador-politica:after {
-  position: absolute;
-  content: '';
-  left: 0px;
-  bottom: 0px;
-  width: 27%;
-  height: 2px;
-  background-color: rgba(217, 217, 217, 1);
-  margin-bottom: 13px;
-}
-
-/*------------- LISTA -------------*/
-.lista-politica {
-  max-width: 69%;
-  margin: 80px auto 0px auto;
-  text-align: center;
-  padding: 20px;
-}
-
-.lista-politica p {
-  display: flex;
-  margin: 40px 0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 350;
-  font-size: 18px;
-  color: rgba(30, 30, 30, 1);
-  font-size: 16px;
-  text-align: left;
-  line-height: 25px;
-}
-
-.icon-politica {
-  margin-right: 25px;
-  font-size: 43px;
-  color: rgba(23, 145, 215, 1);
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  position: relative;
-  bottom: 7px;
-}
-
-/*---------- FIN UNIDAD DE CALIDAD ----------*/
 /*--------------- COKIES PAGE ---------------*/
 /* Base */
 .cookie-pol-wrap{max-width:1100px;margin:0 auto;padding:0 20px;font-family:"Montserrat",sans-serif;color:#111}
@@ -2913,13 +2824,11 @@ line-height: 27px;
 .cookie-pol-main{background:#fff}
 .cookie-pol-intro{padding:24px 0}
 .cookie-pol-intro p{color:#444;line-height:1.7;margin:0}
-
 /* Índice */
 .cookie-pol-toc{padding:18px 0 8px}
 .cookie-pol-toc h2{font-size:18px;color:#062356;margin:0 0 8px;text-transform:uppercase;letter-spacing:.3px}
 .cookie-pol-toc ol{margin:0 0 0 18px;color:#0a2f70;line-height:1.7}
 .cookie-pol-toc a{color:#0a3b91;text-decoration:underline}
-
 /* Secciones */
 .cookie-pol-section{padding:22px 0;border-top:1px solid #f0f3f8}
 .cookie-pol-section:first-of-type{border-top:none}
@@ -2927,13 +2836,11 @@ line-height: 27px;
 .cookie-pol-section p{color:#444;line-height:1.7;margin:0}
 .cookie-pol-list{margin:8px 0 0 18px;color:#333;line-height:1.6}
 .cookie-pol-list li{margin:0 0 6px}
-
 /* Cards */
 .cookie-pol-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
 .cookie-pol-card{background:#f9fbff;border:1px solid #e2e9f8;border-radius:12px;padding:14px 16px}
 .cookie-pol-card h3{margin:0 0 6px;color:#062356;font-size:16px}
 .cookie-pol-card p{margin:0;color:#444}
-
 /* Tabla ejemplo */
 .cookie-pol-table{border:1px solid #e6eaf1;border-radius:12px;overflow:hidden;margin-top:8px}
 .cookie-pol-table>div{display:grid;grid-template-columns:.9fr 1fr .8fr 1.4fr .6fr;gap:12px;padding:10px 14px}
@@ -2941,201 +2848,13 @@ line-height: 27px;
 .cookie-pol-table>div:nth-child(odd):not(:first-child){background:#f9fbff}
 .cookie-pol-table span{display:block}
 .cookie-pol-note{color:#667085;font-size:13px;margin-top:6px}
-
 /* Footer */
 .cookie-pol-foot{background:#f8f9fc;border-top:1px solid #e9edf4;padding:20px 0;margin-top:20px}
 .cookie-pol-btn{display:inline-block;padding:9px 14px;background:#062356;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;margin-right:10px;transition:background-color .25s ease,box-shadow .25s ease}
 .cookie-pol-btn:hover{background:#0a3b91;box-shadow:0 4px 12px rgba(0,0,0,.08)}
 .cookie-pol-btn--sec{background:#0a3b91}
 .cookie-pol-btn--sec:hover{background:#0d4ebb}
-
 /* Responsive */
 @media(max-width:1024px){.cookie-pol-cards{grid-template-columns:1fr 1fr}.cookie-pol-table>div{grid-template-columns:1fr 1fr .8fr 1.2fr .6fr}}
 @media(max-width:768px){.cookie-pol-head h1{font-size:26px}.cookie-pol-table>div{grid-template-columns:1fr 1fr}}
-
-
-
-  /* -----------------------------------------------------------------------------
-  # Contact Page Styles
-  ----------------------------------------------------------------------------- */
-  .p-hide {
-    display: inline;
-}
-.p-mobile {
-    display: none;
-}
-
-  .contact {
-    margin-top: 20vh;
-  }
-
-  .contact-form {
-    margin-top: 9vh;
-  }
-
-  .form-title {
-    margin-bottom: 25px;
-  }
-  
-  .form-title h2 {
-    font-size: 34px;
-    color: rgba(57, 148, 209, 1);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    margin-bottom: 40px;
-  }
-  
-  .form-title p {
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    line-height: 0px;
-  }
-  
-  .hero-bg-contact {
-    background-color: rgba(0, 89, 149, 0.82);
-  } 
-  
-  .hero-text-contact h1 {
-    font-size: 50px;
-    line-height: 1.2;
-    color: rgba(255, 255, 255, 1);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 70px;
-  }
-  
-  .hero-text-contact {
-    display: table;
-    height: 100%;
-  }
-  .hero-area-contact div.hero-text-contact {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .hero-area-contact {
-    height: 40%;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .hero-area-contact:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    z-index: -1;
-  }
-  
-  .hero-area-contact div {
-    height: 100%;
-    width: 96%;
-  }
-  
-  .hero-area-contact div.hero-text {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .hero-area-contact div.hero-text-tablecell {
-    height: auto;
-    vertical-align: middle;
-  }
-  
-  .hero-area-contact div.hero-text-tablecell div {
-    height: auto;
-    vertical-align: middle;
-  }
-  
-  .hero-area-contact div.hero-form {
-    background-color: #fff;
-    text-align: center;
-    width: 380px;
-    margin: 0 auto;
-    margin-right: 0;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 15px #2d2d2d;
-    box-shadow: 0 0 15px #2d2d2d;
-    position: absolute;
-    right: 30px;
-    bottom: -15%;
-    height: 600px;
-  }
-
-  .contact-form form p input[type=text], .contact-form form p input[type=tel], .contact-form form p input[type=email] {
-    width: 49%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-  }
-  
-  .contact-form form p textarea {
-    border: 1px solid #ddd;
-    padding: 15px;
-    height: 200px;
-    border-radius: 3px;
-    width: 98.5%;
-    resize: none;
-  }
-  
-  .contact-form-wrap {
-    background-color: rgba(249 249 249);
-    padding: 22px 30px;
-    border-radius: 10px;
-    margin-top: 18vh;
-  }
-
-  .contact-form-wrap span{
-    font-weight: 650;
-  }
-  
-  .contact-form-box {
-    padding-left: 40px;
-    margin-bottom: 30px;
-  }
-  
-  .contact-form-box h4 {
-    font-size: 20px;
-    font-weight: 550;
-    position: relative;
-    margin-bottom: 7px;
-  }
-  
-  .contact-form-box h4 i {
-    position: absolute;
-    left: -12%;
-    color: #367ec5;
-    top: 5px;
-  }
-  
-  .contact-form-box p {
-    line-height: 1.8;
-    opacity: 0.8;
-  }
-  
-  .contact-form-wrap .contact-form-box:last-child {
-    margin: 0;
-  }
-
-  .find-location {
-    border-top: 5px solid #367ec5;
-    padding: 10px 0 10px 0;
-    background-color: #f0f0f0;
-  }
-  .find-location p {
-    color: #000000;
-    font-size: 25px;
-    margin: 0;
-    font-weight: 600;
-    padding: 10px 0;
-  }
-  
-  .find-location p i {
-    margin-right: 10px;
-    color: #367ec5;
-  }
+  .contact { margin-top: 20vh; }
