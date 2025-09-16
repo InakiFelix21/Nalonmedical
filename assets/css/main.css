@@ -252,10 +252,6 @@ html {
     padding: 7px 20px;
   }
   
-  a.boxed-btn, a.bordered-btn, a.cart-btn {
-    border-radius: 50px;
-  }
-  
   .product-section {
     margin-bottom: 85px;
   }
@@ -284,81 +280,22 @@ html {
   
   /* ------------------ */
   /* Slide-bar styles */
-/* Overlay */
-.sidenav-overlay{
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,.35);
-  opacity: 0; pointer-events: none;
-  transition: opacity .25s ease;
-  z-index: 999; /* debajo del sidenav */
-}
-
-/* Contenedor */
-.sidenav{
-  position: fixed; left: 0; top: 0; bottom: 0;
-  width: 240px; max-width: 86vw;
-  background-color: #062356;
-  z-index: 1000;
-  transform: translateX(-100%);
-  transition: transform .3s ease;
-  padding: 60px 0 20px;
-  box-shadow: 2px 0 18px rgba(0,0,0,.2);
-  overflow-y: auto; -webkit-overflow-scrolling: touch;
-}
-
-/* Estado abierto */
+.sidenav-overlay{ position: fixed; inset: 0; background: rgba(0,0,0,.35); opacity: 0; pointer-events: none; transition: opacity .25s ease; z-index: 999; }
+.sidenav{ position: fixed; left: 0; top: 0; bottom: 0; width: 240px; max-width: 86vw; background-color: #062356; z-index: 1000; transform: translateX(-100%); transition: transform .8s ease; padding: 60px 0 20px; box-shadow: 2px 0 18px rgba(0,0,0,.2); overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .sidenav.is-open{ transform: translateX(0); }
 .sidenav-overlay.is-open{ opacity: 1; pointer-events: auto; }
-
-/* Header del panel */
-.sidenav-header{
-  position: sticky; top: 0;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 16px 12px;
-  background: #062356;
-  z-index: 1;
-  border-bottom: 1px solid rgba(255,255,255,.08);
-}
-.sidenav-title{
-  color: #fff; font-family: "Montserrat", sans-serif; font-size: 14px; letter-spacing: .5px; text-transform: uppercase;
-}
-
-/* Botón cerrar */
-.sidenav .closebtn{
-  background: transparent; border: 0; color: #fff;
-  font-size: 36px; line-height: 1; cursor: pointer;
-  padding: 0; margin: 0;
-}
+.sidenav-header{ position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 10px 16px 12px; background: #062356; z-index: 1; border-bottom: 1px solid rgba(255,255,255,.08); }
+.sidenav-title{ color: #fff; font-family: "Montserrat", sans-serif; font-size: 14px; letter-spacing: .5px; text-transform: uppercase; }
+.sidenav .closebtn{ background: transparent; border: 0; color: #fff; font-size: 36px; line-height: 1; cursor: pointer; padding: 0; margin: 0; }
 .sidenav .closebtn:hover{ opacity: .85; }
-
-/* Enlaces */
 .links-container{ padding: 0; }
-.sidenav a{
-  display: block;
-  padding: 14px 18px;
-  text-decoration: none;
-  font-size: 14px; line-height: 1.3;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  transition: background-color .2s ease, color .2s ease, padding-left .2s ease;
-}
-.sidenav a + a{
-  border-top: 1px solid rgba(255,255,255,.08);
-}
-.sidenav a.is-active {
-  background: rgba(255,255,255,.12);
-  font-weight: 600;
-}
-
-/* Focus visible accesible */
+.sidenav a{ display: block; padding: 14px 18px; text-decoration: none; font-size: 14px; line-height: 1.3; color: #fff; font-family: "Montserrat", sans-serif; transition: background-color .2s ease, color .2s ease, padding-left .2s ease; }
+.sidenav a + a{ border-top: 1px solid rgba(255,255,255,.08); }
+.sidenav a.is-active { background: rgba(255,255,255,.12); font-weight: 600; }
 .sidenav a:focus-visible,
-.sidenav .closebtn:focus-visible{
-  outline: 2px solid #c6d4ff;
-  outline-offset: 2px;
-  border-radius: 4px;
-}
+.sidenav .closebtn:focus-visible{ outline: 2px solid #c6d4ff; outline-offset: 2px; border-radius: 4px; }
 
-/* Bloqueo de scroll cuando está abierto */
+
 body.nav-open{ overflow: hidden; }
   
   .container {
@@ -621,15 +558,6 @@ body.nav-open{ overflow: hidden; }
   .top-header-area .header-icons a:hover {
     color: #031a55e3;
   }
-  
-  .sticky-wrapper {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 999 !important;
-  }
-  
   .top-header-area {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -934,741 +862,164 @@ body.nav-open{ overflow: hidden; }
   /*---------------- FIN DIÁLISIS INICIO -----------------*/
 
   /*---------------- PRODUCTOS ----------------*/
-  .productos-premium-section {
-    padding: 90px 20px;
-    text-align: center;
-    background-color: #ffffff;
-  }
-  
-  .productos-premium-section h2 {
-    font-size: 41px;
-    color: #062356;
-    margin-bottom: 60px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  
-  .tarjeta-producto {
-    background-color: #ebecf2;
-    border-left: 5px solid #062356;
-    border-radius: 10px;
-    padding: 30px 40px;
-    margin: 0 auto 30px auto;
-    max-width: 900px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-  }
-  
-  .tarjeta-contenido h3 {
-    font-size: 22px;
-    color: #062356;
-    margin-bottom: 10px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .tarjeta-contenido p {
-    font-size: 16px;
-    color: #444;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-  
-  .tarjeta-contenido a {
-    font-size: 15px;
-    color: #093f9c;
-    text-decoration: underline;
-    font-weight: 500;
-  }  
-  .tarjeta-contenido a:hover {
-    color: #062356;
-  }  
+  .productos-premium-section { padding: 90px 20px; text-align: center; background-color: #ffffff; }
+  .productos-premium-section h2 { font-size: 41px; color: #062356; margin-bottom: 60px; font-family: "Montserrat", sans-serif; font-weight: 600; text-transform: uppercase; }
+  .tarjeta-producto { background-color: #ebecf2; border-left: 5px solid #062356; border-radius: 10px; padding: 30px 40px; margin: 0 auto 30px auto; max-width: 900px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: left; }
+  .tarjeta-contenido h3 { font-size: 22px; color: #062356; margin-bottom: 10px; font-family: "Montserrat", sans-serif; }
+  .tarjeta-contenido p { font-size: 16px; color: #444; line-height: 1.5; margin-bottom: 15px; }
+  .tarjeta-contenido a { font-size: 15px; color: #093f9c; text-decoration: underline; font-weight: 500; }  
+  .tarjeta-contenido a:hover { color: #062356; }  
 /*---------------- FIN PRODUCTOS ----------------*/
-  
-
 /* ===== Contacto (Nalon Medical) ===== */
-.contact-dial-section {
-  padding: 56px 20px;
-  background-color: #f8f9fc;
-  text-align: center;
-}
-.contact-dial-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.contact-dial-section h1 {
-  font-size: 60px;
-  color: #062356;
-  margin-bottom: 10px;
-  font-weight: 700;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-.contact-dial-section h1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 3px;
-  background: var(--nm-azul);
-  border-radius: 2px;
-}
-.contact-dial-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  /* max-width: 700px; */
-  margin: 16px auto 50px;
-  color: #555; /* más suave */
-  font-weight: 300;
-}
-
-/* Layout columnas */
-.contact-dial-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/* Formulario */
-.contact-dial-form {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-}
-/* Estilo general para inputs y textarea */
+.contact-dial-section { padding: 56px 20px; background-color: #f8f9fc; text-align: center; }
+.contact-dial-container { max-width: 1100px; margin: 0 auto; }
+.contact-dial-section h1 { font-size: 60px; color: #062356; margin-bottom: 10px; font-weight: 700; position: relative; display: inline-block; padding-bottom: 10px; }
+.contact-dial-section h1::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 70px; height: 3px; background: var(--nm-azul); border-radius: 2px; }
+.contact-dial-section p { font-size: 18px; line-height: 1.6;  margin: 16px auto 50px; color: #555; font-weight: 300; }
+.contact-dial-content { display: flex; flex-wrap: wrap; gap: 50px; justify-content: center; align-items: flex-start; }
+.contact-dial-form { flex: 1; min-width: 300px; max-width: 500px; display: flex; flex-direction: column; }
 .contact-dial-form input,
-.contact-dial-form textarea {
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ccd2da;
-  border-radius: 6px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  background: #fff;
-  color: #a0a0a0;
-  outline: none;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-.contact-dial-form textarea {
-  resize: vertical;      /* Solo permite agrandar en altura */
-  max-height: 400px;     /* Máxima altura permitida */
-  min-height: 120px;     /* Altura mínima */
-}
-.contact-dial-select {
-  padding: 12px 30px 12px 15px; /* espacio para flecha */
-  margin-bottom: 15px;
-  border: 1px solid #ccd2da;
-  border-radius: 6px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  background: #fff;
-  color: #a0a0a0;
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='%23939393' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 23px;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
+.contact-dial-form textarea { padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccd2da; border-radius: 6px; font-family: "Montserrat", sans-serif; font-size: 16px; background: #fff; color: #a0a0a0; outline: none; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+.contact-dial-form textarea { resize: vertical;      max-height: 400px;   min-height: 120px;     }
+.contact-dial-select { padding: 12px 30px 12px 15px; /* espacio para flecha */ margin-bottom: 15px; border: 1px solid #ccd2da; border-radius: 6px; font-family: "Montserrat", sans-serif; font-size: 16px; background: #fff; color: #a0a0a0; outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none; background-image: url("data:image/svg+xml;utf8,<svg fill='%23939393' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>"); background-repeat: no-repeat; background-position: right 10px center; background-size: 23px; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 .contact-dial-form input:focus,
 .contact-dial-form textarea:focus,
-.contact-dial-select:focus {
-  border-color: #062356;
-  box-shadow: 0 0 0 2px rgba(10, 59, 145, 0.08);
-}
+.contact-dial-select:focus { border-color: #062356; box-shadow: 0 0 0 2px rgba(10, 59, 145, 0.08); }
 
-/* Botón enviar */
-.contact-dial-form button {
-  padding: 12px 20px;
-  background-color: #062356;
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color .3s ease, box-shadow .3s ease, transform .02s ease;
-}
-.contact-dial-form button:hover {
-  background-color: #0a3b91;
-  box-shadow: 0 4px 12px rgba(0,0,0,.08);
-}
-.contact-dial-form button:active {
-  transform: translateY(1px);
-}
+.contact-dial-form button { padding: 12px 20px; background-color: #062356; color: #fff; font-weight: 500; border: none; border-radius: 6px; cursor: pointer; transition: background-color .3s ease, box-shadow .3s ease, transform .02s ease; }
+.contact-dial-form button:hover { background-color: #0a3b91; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+.contact-dial-form button:active { transform: translateY(1px); }
 
-/* Consentimiento + aviso legal */
-.contact-dial-consent {
-  font-size: 14px;
-  color: #333;
-  text-align: left;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  line-height: 1.4;
-  margin-top: 4px;
-}
-.contact-dial-consent input {
-  transform: translateY(2px);
-}
-.contact-dial-legal {
-  display: block;
-  color: #6b7280;
-  margin: 6px 0 14px;
-  text-align: left;
-}
+.contact-dial-consent { font-size: 14px; color: #333; text-align: left; display: flex; gap: 10px; align-items: flex-start; line-height: 1.4; margin-top: 4px; }
+.contact-dial-consent input { transform: translateY(2px); }
+.contact-dial-legal { display: block; color: #6b7280; margin: 6px 0 14px; text-align: left; }
 
-/* Columna info */
-.contact-dial-info {
-  flex: 1;
-  min-width: 260px;
-  text-align: left;
-}
-.contact-dial-info h3 {
-  font-size: 24px;
-  color: #062356;
-  margin-bottom: 16px;
-  font-family: "Raleway", sans-serif;
-}
-.contact-dial-info p {
-  margin-bottom: 10px;
-  color: #444;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
+.contact-dial-info { flex: 1; min-width: 260px; text-align: left; }
+.contact-dial-info h3 { font-size: 24px; color: #062356; margin-bottom: 16px; font-family: "Raleway", sans-serif; }
+.contact-dial-info p { margin-bottom: 10px; color: #444; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 
-/* Acciones rápidas */
-.contact-dial-quick {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.contact-dial-btn-quick {
-  padding: 10px 14px;
-  border: 1px solid #062356;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-  background: #062356;
-}
-.contact-dial-btn-quick:hover {
-  color: #ffffff;
-  background-color: #0a3b91;
-}
+.contact-dial-quick { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+.contact-dial-btn-quick { padding: 10px 14px; border: 1px solid #062356; border-radius: 6px; text-decoration: none; color: #ffffff; font-size: 14px; background: #062356; }
+.contact-dial-btn-quick:hover { color: #ffffff; background-color: #0a3b91; }
 
 /* PAGINA PRODUCTOS */
-
-/* ===== Página de Productos (layout catálogo con sidebar) ===== */
-.products-dial-page {
-  background: #ffffff;
-  padding: 56px 20px 90px;
-}
-
-.products-dial-wrap {
-  max-width: 1200px;
-  margin: 0 auto 0 45px;
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
-}
-
-/* Sidebar */
-.products-dial-sidebar {
-  position: sticky;
-  top: 90px;             /* baja si tu header es más alto */
-  align-self: start;
-  background: #f8f9fc;
-  border: 1px solid #e6eaf1;
-  border-radius: 10px;
-  padding: 20px;
-}
-.products-dial-sidebar h2 {
-  margin: 0 0 12px 0;
-  font-size: 22px;
-  color: #062356;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-}
-.products-dial-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.products-dial-nav a {
-  display: block;
-  padding: 10px 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #0a2c66;
-  border: 1px solid transparent;
-  transition: background-color .2s ease, border-color .2s ease;
-  font-size: 15px;
-}
-.products-dial-nav a:hover {
-  background: #eef3fb;
-  border-color: #e0e8f5;
-}
-.products-dial-nav a.active {
-  background: #e9f0fb;
-  border-color: #d6e3fa;
-}
-
-/* Contenido */
-.products-dial-content h1 {
-  position: relative;
-  display: inline-block;
-  color: #062356;
-  /* margin: 0 0 10px 0; */
-  font-weight: 700;
-  padding-bottom: 22px;
-}
-.products-dial-content h1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 3px;
-  background: var(--nm-azul);
-  border-radius: 2px;
-}
-.products-dial-header p {
-  font-size: 18px;
-  line-height: 1.6;
-  /* max-width: 700px; */
-  margin: 16px auto 30px;
-  color: #555; /* más suave */
-  font-weight: 300;
-}
-
-/* Secciones */
-.products-dial-section {
-  background: #ffffff;
-  border: 1px solid #e9edf4;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-  padding: 22px 24px;
-}
-.products-dial-section .products-dial-section {
-  margin-top: 24px;
-}
-.products-dial-section-head h2 {
-  font-size: 22px;
-  color: #062356;
-  margin: 0 0 6px 0;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-}
-.products-dial-section-body p {
-  color: #444;
-  line-height: 1.6;
-}
-.products-dial-bullets {
-  margin: 14px 0 18px 18px;
-  color: #333;
-}
+.products-dial-page { background: #ffffff; padding: 56px 20px 90px; }
+.products-dial-wrap { max-width: 1200px; margin: 0 auto 0 45px; display: grid; grid-template-columns: 280px 1fr; gap: 40px; }
+.products-dial-sidebar { position: sticky; top: 90px; align-self: start; background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px; padding: 20px; }
+.products-dial-sidebar h2 { margin: 0 0 12px 0; font-size: 22px; color: #062356; font-weight: 700; font-family: "Montserrat", sans-serif; }
+.products-dial-nav { display: flex; flex-direction: column; gap: 8px; }
+.products-dial-nav a { display: block; padding: 10px 12px; border-radius: 8px; text-decoration: none; color: #0a2c66; border: 1px solid transparent; transition: background-color .2s ease, border-color .2s ease; font-size: 15px; }
+.products-dial-nav a:hover { background: #eef3fb; border-color: #e0e8f5; }
+.products-dial-nav a.active { background: #e9f0fb; border-color: #d6e3fa; }
+.products-dial-content h1 { position: relative; display: inline-block; color: #062356; /* margin: 0 0 10px 0; */ font-weight: 700; padding-bottom: 22px; }
+.products-dial-content h1::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 70px; height: 3px; background: var(--nm-azul); border-radius: 2px; }
+.products-dial-header p { font-size: 18px; line-height: 1.6; margin: 16px auto 30px; color: #555; font-weight: 300; }
+.products-dial-section { background: #ffffff; border: 1px solid #e9edf4; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.05); padding: 22px 24px; }
+.products-dial-section .products-dial-section { margin-top: 24px; }
+.products-dial-section-head h2 { font-size: 22px; color: #062356; margin: 0 0 6px 0; font-weight: 700; font-family: "Montserrat", sans-serif; }
+.products-dial-section-body p { color: #444; line-height: 1.6; }
+.products-dial-bullets { margin: 14px 0 18px 18px; color: #333; }
 .products-dial-bullets li { margin-bottom: 6px; }
-
-/* Grid de items futuros */
-.products-dial-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
-  gap: 16px;
-  margin-top: 14px;
-}
-.products-dial-item {
-  background: #f8f9fc;
-  border: 1px solid #e6eaf1;
-  border-radius: 10px;
-  padding: 16px;
-}
-.products-dial-item h3 {
-  font-size: 18px;
-  color: #062356;
-  margin: 0 0 6px 0;
-  font-family: "Montserrat", sans-serif;
-}
-.products-dial-item p {
-  color: #444;
-  margin: 0 0 10px 0;
-  line-height: 1.5;
-}
-
-
-/* Acciones */
-.products-dial-actions {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.products-dial-btn {
-  display: inline-block;
-  padding: 9px 16px;
-  background-color: #062356;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  transition: transform .02s ease;
-}
-.products-dial-btn:hover {
-  color: #ffffff;
-}
-.products-dial-link {
-  font-size: 14px;
-  color: #0a3b91;
-  text-decoration: underline;
-}
-
-/* Separador sutil */
-.products-dial-sep {
-  border: none;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #e5e9f2 50%, rgba(0,0,0,0) 100%);
-  margin: 24px 0;
-}
-
-/* Responsive */
-/* @media (max-width: 1024px) {
-  .products-dial-wrap { grid-template-columns: 1fr; }
-  .products-dial-sidebar { position: static; }
-}
-@media (max-width: 768px) {
-  .products-dial-page { padding: 40px 16px 70px; }
-  .products-dial-grid { grid-template-columns: 1fr; }
-} */
-
-/* ===== Detalle de descartables ===== */
+.products-dial-grid { display: grid; grid-template-columns: repeat(2, minmax(260px, 1fr)); gap: 16px; margin-top: 14px; }
+.products-dial-item { background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px;
+ padding: 16px; }
+.products-dial-item h3 { font-size: 18px; color: #062356; margin: 0 0 6px 0; font-family: "Montserrat", sans-serif; }
+.products-dial-item p { color: #444; margin: 0 0 10px 0; line-height: 1.5; }
+.products-dial-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.products-dial-btn { display: inline-block; padding: 9px 16px; background-color: #062356; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500; font-family: "Montserrat", sans-serif; transition: transform .02s ease; }
+.products-dial-btn:hover { color: #ffffff; }
+.products-dial-link { font-size: 14px; color: #0a3b91; text-decoration: underline; }
+.products-dial-sep { border: none; height: 1px; background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #e5e9f2 50%, rgba(0,0,0,0) 100%); margin: 24px 0; }
 .pdetail-dial-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-
-/* Hero */
-.pdetail-dial-hero {
-  background: linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%);
-  padding: 48px 0 36px;
-  border-bottom: 1px solid #e9edf4;
-}
+.pdetail-dial-hero { background: linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%); padding: 48px 0 36px; border-bottom: 1px solid #e9edf4; }
 .pdetail-dial-breadcrumb { font-size: 14px; color: #667085; margin-bottom: 8px; }
 .pdetail-dial-breadcrumb a { color: #667085; text-decoration: none; }
 .pdetail-dial-breadcrumb a:hover { text-decoration: underline; }
-.pdetail-dial-hero h1 {
-  font-size: 30px; color: #062356; margin: 6px 0 8px; letter-spacing: .5px;
-}
+.pdetail-dial-hero h1 { font-size: 30px; color: #062356; margin: 6px 0 8px; letter-spacing: .5px; }
 .pdetail-dial-lead { color: #444; max-width: 840px; line-height: 1.6; }
-
-/* Cuerpo */
 .pdetail-dial-body { background: #ffffff; padding: 28px 0 80px; }
 .pdetail-dial-layout { display: grid; grid-template-columns: 1fr 300px; gap: 28px; }
-
-/* Main */
 .pdetail-dial-block + .pdetail-dial-block { margin-top: 20px; }
-.pdetail-dial-block h2 {
-  font-size: 20px; color: #062356; margin: 0 0 8px 0; font-weight: 600;
-}
+.pdetail-dial-block h2 { font-size: 20px; color: #062356; margin: 0 0 8px 0; font-weight: 600; }
 .pdetail-dial-block p { color: #444; line-height: 1.6; }
 .pdetail-dial-list { margin: 10px 0 0 18px; color: #333; }
 .pdetail-dial-list li { margin-bottom: 6px; }
-
-/* Grilla de items */
-.pdetail-dial-grid {
-  display: grid; grid-template-columns: repeat(2, minmax(240px, 1fr));
-  gap: 14px; margin-top: 8px;
-}
-.pdetail-dial-item {
-  background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px;
-  padding: 14px;
-}
+.pdetail-dial-grid { display: grid; grid-template-columns: repeat(2, minmax(240px, 1fr)); gap: 14px; margin-top: 8px; }
+.pdetail-dial-item { background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px; padding: 14px; }
 .pdetail-dial-item h3 { font-size: 18px; color: #062356; margin: 0 0 6px; }
 .pdetail-dial-item p { color: #444; margin: 0 0 10px; line-height: 1.5; }
-
-/* Aside */
 .pdetail-dial-aside { position: sticky; top: 90px; height: fit-content; }
-.pdetail-dial-box {
-  background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px;
-  padding: 16px; margin-bottom: 16px;
-}
+.pdetail-dial-box { background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
 .pdetail-dial-box h3 { font-size: 18px; color: #062356; margin: 0 0 10px; }
-
-/* Links y botones */
 .pdetail-dial-links { list-style: none; padding: 0; margin: 0; }
 .pdetail-dial-links li { margin-bottom: 8px; }
 .pdetail-dial-links a { color: #0a3b91; text-decoration: underline; font-size: 14px; }
-
-.pdetail-dial-btn {
-  display: inline-block; padding: 9px 16px; background-color: #062356; color: #fff;
-  border-radius: 6px; text-decoration: none; font-weight: 500; font-family: "Montserrat", sans-serif;
-  transition: transform .02s ease;
-}
-
+.pdetail-dial-btn { display: inline-block; padding: 9px 16px; background-color: #062356; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500; font-family: "Montserrat", sans-serif; transition: transform .02s ease; }
 .pdetail-dial-btn:hover { color: #ffffff;}
 .pdetail-dial-btn:active { transform: translateY(1px); }
 .pdetail-dial-btn--sec { background-color: #0a3b91; }
 .pdetail-dial-btn--sec:hover { background-color: #062356; }
-
 /*------------- FIN PAGINA PRODUCTOS --------------*/
-
 /*-----------------  SERVICES PAGE -----------------------*/
 /* ====== Variables de marca ====== */
-:root {
-  --nm-azul: #062356;
-  --nm-azul-10: rgba(6, 35, 86, 0.1);
-  --nm-texto: #1e1e1e;
-  --nm-gris: #f4f6f8;
-  --nm-blanco: #ffffff;
-}
+:root { --nm-azul: #062356; --nm-azul-10: rgba(6, 35, 86, 0.1); --nm-texto: #1e1e1e; --nm-gris: #f4f6f8; --nm-blanco: #ffffff; }
+.services-page { background: var(--nm-blanco); color: var(--nm-texto); font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+.services-container { width: 92%; max-width: 1100px; margin: 0 auto; }
 
-/* ====== Servicios – Base ====== */
-.services-page {
-  background: var(--nm-blanco);
-  color: var(--nm-texto);
-  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
+.services-hero { padding: 56px 0 32px; text-align: center; background: linear-gradient(0deg, var(--nm-blanco), var(--nm-gris)); }
+.services-hero h1 { position: relative; display: inline-block; padding-bottom: 10px; font-weight: 700; color: var(--nm-azul); }
+.services-hero h1::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 70px; height: 3px; background: var(--nm-azul); border-radius: 2px; }
+.services-subtitle { font-size: 18px; line-height: 1.6; max-width: 700px; margin: 16px auto 0; color: #555; font-weight: 300; }
 
-.services-container {
-  width: 92%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Hero */
-.services-hero {
-  padding: 56px 0 32px;
-  text-align: center;
-  background: linear-gradient(0deg, var(--nm-blanco), var(--nm-gris));
-}
-
-.services-hero h1 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 10px;
-  font-weight: 700;
-  color: var(--nm-azul);
-}
-
-.services-hero h1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 3px;
-  background: var(--nm-azul);
-  border-radius: 2px;
-}
-
-.services-subtitle {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 16px auto 0;
-  color: #555; /* más suave */
-  font-weight: 300;
-}
-
-/* Grid (una columna fija por ahora) */
-.services-block {
-  padding: 32px 0 12px;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* sin responsive: queda 1 columna */
-  gap: 18px;
-}
-
-.service-card {
-  background: var(--nm-blanco);
-  border: 1px solid #e6e9ee;
-  border-radius: 16px;
-  padding: 18px;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
+.services-block { padding: 32px 0 12px; }
+.services-grid { display: grid; grid-template-columns: 1fr; /* sin responsive: queda 1 columna */ gap: 18px; }
+.service-card { background: var(--nm-blanco); border: 1px solid #e6e9ee; border-radius: 16px; padding: 18px; transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
 .service-card:hover,
-.service-card:focus-within {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-  border-color: var(--nm-azul-10);
-}
+.service-card:focus-within { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08); border-color: var(--nm-azul-10); }
+.service-card h3 { font-family: "Raleway", "Montserrat", sans-serif; font-size: 20px; margin: 0 0 8px; color: var(--nm-azul); display: flex; align-items: center; gap: 10px; }
+.service-card p { margin: 0; line-height: 1.65; font-size: 16px; color: #2e2e2e; }
 
-.service-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: var(--nm-azul-10);
-  margin-bottom: 12px;
-}
+.service-icon { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: var(--nm-azul-10); margin-bottom: 12px; }
+.service-icon i { font-size: 22px; color: var(--nm-azul); }
 
-.service-icon i {
-  font-size: 22px;
-  color: var(--nm-azul);
-}
+.service-badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 999px; background: #eaf0ff; color: var(--nm-azul); }
 
-.service-card h3 {
-  font-family: "Raleway", "Montserrat", sans-serif;
-  font-size: 20px;
-  margin: 0 0 8px;
-  color: var(--nm-azul);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+.services-cta { margin: 24px 0 56px; padding: 28px 18px; text-align: center; background: linear-gradient(0deg, var(--nm-gris), var(--nm-blanco)); border-top: 1px solid #e6e9ee; border-bottom: 1px solid #e6e9ee; }
+.services-cta h2 { font-family: "Raleway", "Montserrat", sans-serif; font-size: 24px; margin: 0 0 8px; color: var(--nm-azul); }
+.services-cta p { margin: 0 0 16px; color: #3b3b3b; }
 
-.service-card p {
-  margin: 0;
-  line-height: 1.65;
-  font-size: 16px;
-  color: #2e2e2e;
-}
-
-/* Badge “En desarrollo” */
-.service-badge {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 999px;
-  background: #eaf0ff;
-  color: var(--nm-azul);
-}
-
-/* CTA */
-.services-cta {
-  margin: 24px 0 56px;
-  padding: 28px 18px;
-  text-align: center;
-  background: linear-gradient(0deg, var(--nm-gris), var(--nm-blanco));
-  border-top: 1px solid #e6e9ee;
-  border-bottom: 1px solid #e6e9ee;
-}
-
-.services-cta h2 {
-  font-family: "Raleway", "Montserrat", sans-serif;
-  font-size: 24px;
-  margin: 0 0 8px;
-  color: var(--nm-azul);
-}
-
-.services-cta p {
-  margin: 0 0 16px;
-  color: #3b3b3b;
-}
-
-.services-btn {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: 2px solid var(--nm-azul);
-  color: var(--nm-azul);
-  background: transparent;
-  transition: background-color 0.18s ease, color 0.18s ease;
-}
-
+.services-btn { display: inline-block; text-decoration: none; font-weight: 600; padding: 10px 16px; border-radius: 10px; border: 2px solid var(--nm-azul); color: var(--nm-azul); background: transparent; transition: background-color 0.18s ease, color 0.18s ease; }
 .services-btn:hover,
-.services-btn:focus {
-  background: var(--nm-azul);
-  color: var(--nm-blanco);
-  outline: none;
-}
+.services-btn:focus { background: var(--nm-azul); color: var(--nm-blanco); outline: none; }
 
-/* Accesibilidad: focus visible */
 .service-card:focus-within h3,
-.services-btn:focus {
-  box-shadow: 0 0 0 3px rgba(6, 35, 86, 0.2);
-  border-radius: 10px;
-}
+.services-btn:focus { box-shadow: 0 0 0 3px rgba(6, 35, 86, 0.2); border-radius: 10px; }
 /*-----------------  FIN SERVICES PAGE -----------------------*/
-
 /*-----------------  PAGINA ABOUT -----------------------*/
-
-.about-pro-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* HERO con banda lateral */
+.about-pro-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; font-family: "Montserrat", sans-serif; }
 .about-pro-container{max-width:1100px;margin:0 auto;padding:0 20px;font-family:"Montserrat",sans-serif}
-
-/* HERO con banda lateral */
 .about-pro-hero{ position: relative; background: linear-gradient(180deg,#ffffff 0%,#f6f8fc 100%); padding: 60px 0 40px; border-bottom: 1px solid #e9edf4; overflow: hidden;font-family: "Montserrat",sans-serif }
 .about-pro-hero h1{ position: relative;display: inline-block; color: #062356; margin: 0 0 10px; font-weight: 700; padding-bottom: 10px;}
-.about-pro-hero h1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 3px;
-  background: var(--nm-azul);
-  border-radius: 2px;
-}
+.about-pro-hero h1::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 70px; height: 3px; background: var(--nm-azul); border-radius: 2px; }
 .about-pro-lead { color: #444; max-width: 840px; line-height: 1.6; font-size: 16px; font-family: "Montserrat",sans-serif }
-
-
-/* Pillars limpio */
 .about-pro-pillars { background: #fff; padding: 42px 0}
-
 .about-pro-pillars-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px }
-
 .about-pro-card { background: #fff; border: 1px solid #e6eaf1; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.05); padding:22px; transition: transform .25s ease,box-shadow .25s ease; text-align: center }
-
 .about-pro-card h2 { font-size: 20px; color: #062356;margin:0 0 10px; text-transform: uppercase; letter-spacing: .3px; font-weight: 600 }
-
 .about-pro-card p { color: #444; line-height: 1.65; margin: 0 }
-
 .about-pro-values { color: #333; padding: 0; line-height: 1.6; list-style: inside }
-
 .about-pro-values li { margin-bottom: 6px }
-
-
-/* Imagen institucional + copy */
 .about-pro-imageband { background: #f8f9fc; padding:48px 0; border-top: 1px solid #e9edf4; border-bottom: 1px solid #e9edf4 }
-
 .about-pro-imageband .about-pro-container { display: grid; grid-template-columns: 1.2fr .8fr; gap: 60px; align-items: center }
-
 .about-pro-imagebox { position: relative; right: 31px; background: #ffffff; border: 1px solid #e6eaf1; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,.06) }
-
 .about-pro-imagebox img { display: block; width: 77%; height: auto; padding: 0 0 0 25px;}
-
 .about-pro-imagecopy h3 { font-size: 30px; font-family: "Montserrat", sans-serif; color: #062356; margin: 0 0 25px 0 }
-
 .about-pro-imagecopy p { color: #444; line-height: 1.7; margin: 0 0 25px }
-
-.about-pro-btn { display: inline-block; padding: 10px 16px; background: #062356; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500;
-  transition: background-color .25s ease, box-shadow .25s ease, transform .02s ease
-}
+.about-pro-btn { display: inline-block; padding: 10px 16px; background: #062356; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500; transition: background-color .25s ease, box-shadow .25s ease, transform .02s ease }
 .about-pro-btn:hover { background: #0a3b91; box-shadow: 0 4px 12px rgba(0,0,0,.08) }
-
 .about-pro-btn:active { transform: translateY(1px) }
-
 .about-pro-btn--sec { background: #0a3b91}
-
 .about-pro-btn--sec:hover { background: #0d4ebb }
-
 
 /* ===== Calidad y Cumplimiento ===== */
 .about-quality { background: #fff; padding: 48px 0; border-top: 1px solid #e9edf4; text-align: center }
@@ -1683,54 +1034,36 @@ body.nav-open{ overflow: hidden; }
 .about-quality-note { margin-top: 24px; border: 1px solid #e6eaf1; background: #f9fbff; border-radius: 12px; padding: 16px 18px; display: flex; gap: 12px;align-items: center; justify-content: center; flex-wrap: wrap }
 .about-quality-note p { margin:0; color: #444; line-height: 1.6; font-size: 14px }
 
-
-/* Responsive */
 @media (max-width:1024px){
-  .about-pro-pillars-grid{grid-template-columns:1fr}
-  .about-pro-imageband .about-pro-container{grid-template-columns:1fr}
+.about-pro-pillars-grid{grid-template-columns:1fr}
+.about-pro-imageband .about-pro-container{grid-template-columns:1fr}
 }
-
-
 /*--------------------- DEXTROSA 1.5%  -------------------*/
 /* ===== Detalle de producto (plantilla) ===== */
 .pitem-dial-wrap { max-width: 78%; margin: 0 auto; padding: 0 20px; font-family: "Montserrat",sans-serif; }
-
-/* Hero */
 .pitem-dial-hero { background:linear-gradient(180deg,#fff 0%,#f6f8fc 100%);padding:48px 0 32px;border-bottom:1px solid #e9edf4;}
 .pitem-dial-bc { font-size:14px;color:#667085;margin-bottom:8px;}
 .pitem-dial-bc a { color:#667085;text-decoration:none;}
 .pitem-dial-hero h1 { font-size:30px;color:#062356;margin:6px 0 8px;letter-spacing:.4px;text-transform:uppercase;font-weight:700;}
 .pitem-dial-lead { color :#444;max-width:840px;line-height:1.6;}
-
-/* Body */
 .pitem-dial-body { background: #fff; padding: 28px 0 72px; }
 .pitem-dial-grid { display: grid; grid-template-columns: 0px 1fr 280px; gap:24px; }
-
-/* Media */
 .pitem-dial-media { border: 1px solid #062356; overflow: hidden; align-self: start; height: 26%;}
 .pitem-dial-media img { display: block; width: 100%; height: auto; }
-
-/* Main */
 .pitem-dial-block+ .pitem-dial-block{ margin-top: 40px; }
 .pitem-dial-block h2 { font-size: 20px; color: #062356; margin:0 0 8px; font-weight: 600; font-family: "Montserrat", sans-serif;}
 .pitem-dial-list { margin: 0; padding: 0 0 0 15px; color: #333; line-height: 1.6; }
 .pitem-dial-list li { margin-bottom: 6px; }
-
-/* Tabla specs (div table) */
 .pitem-dial-table { border: 1px solid #e6eaf1;border-radius:12px;overflow:hidden; }
 .pitem-dial-table>div { display: grid; grid-template-columns: 180px 1fr; gap: 12px; padding: 10px 14px; }
 .pitem-dial-table>div:nth-child(odd) { background: #f9fbff; }
 .pitem-dial-table span:first-child { color: #062356; font-weight: 600; }
 .pitem-dial-table span:last-child { color: #444; }
-
-/* Actions */
 .pitem-dial-actions { display: flex; gap:12px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
 .pitem-dial-btn { display: inline-block; padding: 9px 16px; background: #062356; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500; }
 .pitem-dial-btn:hover {color: #ffffff;}
 .pitem-dial-btn--sec { background: #0a3b91; }
 .pitem-dial-link { font-size: 14px; color: #0a3b91; text-decoration: underline; }
-
-/* Aside */
 .pitem-dial-aside{ position:sticky;top:90px;height:fit-content;align-self:start}
 .pitem-dial-card{ background:#f8f9fc;border:1px solid #e6eaf1; border-radius: 12px; padding: 16px; margin-bottom: 14px }
 .pitem-dial-card h3{ font-size: 18px; color: #062356; margin: 0 0 8px; font-family: "Montserrat", sans-serif}
@@ -1738,15 +1071,12 @@ body.nav-open{ overflow: hidden; }
 .pitem-dial-links li{ margin-bottom: 8px }
 .pitem-dial-links a{ color: #0a3b91; text-decoration: underline; font-size: 14px }
 
-/* Responsive */
 @media(max-width:1200px){.pitem-dial-grid{grid-template-columns:380px 1fr 280px}}
 @media(max-width:1024px){.pitem-dial-grid{grid-template-columns:1fr;gap:20px}.pitem-dial-aside{position:static}}
 @media(max-width:768px){.pitem-dial-hero{padding:40px 0 24px}.pitem-dial-hero h1{font-size:26px}}
-
-  /* -----------------------------------------------------------------------------
- FIN DEXTROSA 1.5%
-  ----------------------------------------------------------------------------- */
-
+/* -----------------------------------------------------------------------------
+FIN DEXTROSA 1.5%
+----------------------------------------------------------------------------- */
 /* -----------------------------------------------------------------------------
 PREGUNTAS FRECUENTES
 ----------------------------------------------------------------------------- */
@@ -1763,11 +1093,9 @@ PREGUNTAS FRECUENTES
 .faq-dial-item p { margin: 0; padding: 0 18px 16px 18px; color: #444; line-height :1.65; }
 .faq-dial-item a { color: #0a3b91; text-decoration: underline; }
 @media(max-width:768px){.faq-dial-title{font-size:20px}}
-
 /* -----------------------------------------------------------------------------
 FIN PREGUNTAS FRECUENTES
 ----------------------------------------------------------------------------- */
-
 /* -----------------------------------------------------------------------------
 CERTIFICACIONES
 ----------------------------------------------------------------------------- */
@@ -1775,11 +1103,9 @@ CERTIFICACIONES
 .cert-matrix-wrap{max-width:1100px;margin:0 auto;padding:0 20px;font-family:"Montserrat",sans-serif}
 .cert-matrix-title{text-align:center;margin:0 0 16px;color:#062356;font-size:22px;letter-spacing:.4px;text-transform:uppercase;font-weight:700}
 
-/* Banda de chips */
 .cert-matrix-band{background:#ffffff;border-radius:14px;padding:12px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:18px}
 .cert-matrix-chip{color:#ffffff;background:#062356;border:1px solid #dfe6f4;border-radius:999px;padding:6px 12px;font-weight:600;font-size:12px;letter-spacing:.4px}
 
-/* Matriz */
 .cert-matrix-grid {border:1px solid #e6eaf1;border-radius:12px;overflow:hidden;background:#fdfdfe}
 .cert-matrix-row {display:grid;grid-template-columns:1.2fr 1fr;gap:12px;align-items:center;padding:12px 16px}
 .cert-matrix-row:nth-child(odd) {background:#f8f9fc}
@@ -1791,23 +1117,18 @@ CERTIFICACIONES
 .cert-matrix-link {color: #0a3b91; text-decoration: underline }
 .cert-matrix-link:hover {color: #0a3b91; text-decoration: underline }
 
-/* Nota/CTA */
 .cert-matrix-note{margin-top:16px;border:1px solid #e6eaf1;background:#f9fbff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
 .cert-matrix-note p{margin:0;color:#444}
 .cert-matrix-btn{display:inline-block;padding:9px 14px;background:#062356;color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
 .cert-matrix-btn:hover{color: #ffffff;}
 
-/* Responsive */
 @media(max-width:900px){.cert-matrix-row{grid-template-columns:1fr}}
 /* -----------------------------------------------------------------------------
 FIN CERTIFICACIONES
 ----------------------------------------------------------------------------- */
-
 /* -----------------------------------------------------------------------------
 POLITICA DE CALIDAD
 ----------------------------------------------------------------------------- */
-
-/* Base */
 .qc-wrap{max-width:1100px;margin:0 auto;padding:0 20px;font-family:"Montserrat",sans-serif;color:#111}
 .qc-head{background:linear-gradient(180deg,#fff 0%,#f6f8fc 100%);border-bottom:1px solid #e9edf4;padding:44px 0 28px}
 .qc-head h1{margin:0 0 6px;color:#062356;letter-spacing:.4px;text-transform:uppercase;font-size:30px;font-weight:700; font-family:"Montserrat",sans-serif;}
@@ -1816,13 +1137,11 @@ POLITICA DE CALIDAD
 .qc-intro{padding:24px 0}
 .qc-intro p{color:#444;line-height:1.7;margin:0}
 
-/* Índice */
 .qc-toc{padding:18px 0 8px}
 .qc-toc h2{font-size:18px;color:#062356;margin:0 0 8px;text-transform:uppercase;letter-spacing:.3px; font-family:"Montserrat",sans-serif}
 .qc-toc ol{margin:0 0 0 18px;color:#0a2f70;line-height:1.7}
 .qc-toc a{color:#0a3b91;text-decoration:underline}
 
-/* Secciones */
 .qc-section{padding:22px 0;border-top:1px solid #f0f3f8}
 .qc-section:first-of-type{border-top:none}
 .qc-section h2{font-size:20px;color:#062356;margin:0 0 10px;text-transform:uppercase;letter-spacing:.3px; font-family:"Montserrat",sans-serif;}
@@ -1830,991 +1149,131 @@ POLITICA DE CALIDAD
 .qc-list{margin:8px 0 0 18px;color:#333;line-height:1.6}
 .qc-list li{margin:0 0 6px}
 
-/* Cards (Principios) */
 .qc-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
 .qc-card{background:#f9fbff;border:1px solid #e2e9f8;border-radius:12px;padding:14px 16px; font-family:"Montserrat",sans-serif;}
 .qc-card h3{margin:0 0 6px;color:#062356;font-size:16px; font-family:"Montserrat",sans-serif;}
 .qc-card p{margin:0;color:#444}
 
-/* Tabla (Objetivos) */
 .qc-table{border:1px solid #e6eaf1;border-radius:12px;overflow:hidden;margin-top:8px}
 .qc-table>div{display:grid;grid-template-columns:1.2fr .8fr .6fr;gap:12px;padding:10px 14px}
 .qc-table>div:first-child{background:#eef3fb;color:#062356;font-weight:600}
 .qc-table>div:nth-child(odd):not(:first-child){background:#f9fbff}
 .qc-table span{display:block}
 
-/* Aprobaciones y cambios */
 .qc-approvals{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:10px;color:#333}
 .qc-changelog{border:1px solid #e6eaf1;border-radius:12px;overflow:hidden;margin-top:8px}
 .qc-changelog>div{display:grid;grid-template-columns:.4fr .6fr 2fr;gap:12px;padding:10px 14px}
 .qc-changelog>div:first-child{background:#eef3fb;color:#062356;font-weight:600}
 .qc-changelog>div:nth-child(odd):not(:first-child){background:#f9fbff}
 
-/* Footer */
 .qc-foot{background:#f8f9fc;border-top:1px solid #e9edf4;padding:20px 0;margin-top:20px}
 .qc-btn{display:inline-block;padding:9px 14px;background:#062356;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;margin-right:10px;transition:background-color .25s ease,box-shadow .25s ease}
 .qc-btn:hover{background:#0a3b91;box-shadow:0 4px 12px rgba(0,0,0,.08)}
 .qc-btn--sec{background:#0a3b91}
 .qc-btn--sec:hover{background:#0d4ebb}
 
-/* Responsive */
-@media(max-width:1024px){
-  .qc-cards{grid-template-columns:1fr 1fr}
-  .qc-approvals{grid-template-columns:1fr}
-}
-@media(max-width:768px){
-  .qc-head h1{font-size:26px}
-  .qc-table>div{grid-template-columns:1fr 1fr 1fr}
-  .qc-changelog>div{grid-template-columns:.6fr 1fr 1fr}
-}
-
-
+@media(max-width:1024px){ .qc-cards{grid-template-columns:1fr 1fr} .qc-approvals{grid-template-columns:1fr} }
+@media(max-width:768px){ .qc-head h1{font-size:26px} .qc-table>div{grid-template-columns:1fr 1fr 1fr} .qc-changelog>div{grid-template-columns:.6fr 1fr 1fr} }
 /* -----------------------------------------------------------------------------
 FIN POLITICA DE CALIDAD
 ----------------------------------------------------------------------------- */
-
   /* -----------------------------------------------------------------------------
   # Footer Styles
   ----------------------------------------------------------------------------- */
-  .single-logo-item img {
-    max-width: 180px;
-    margin: 0 auto;
-  }
-  
-  .logo-carousel-section {
-    background-color: #062356;
-    padding: 40px 0;
-    margin: 80px 0 90px 0;
-  }
-  
-  .footer-area {
-    background-color: #062356;
-    padding: 50px 0 30px 80px;
-  }
-
-  .footer-area .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer-area .col-lg-3 {
-    flex: 1 1 25%;
-    max-width: 25%;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  .col-lg-3.col-md-6.contacto-footer {
-    padding: 15px;
-}
-  
-  h2.widget-title {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    position: relative;
-    color: rgba(255, 255, 255, 1);
-  }
-  
+  .single-logo-item img { max-width: 180px; margin: 0 auto; }
+  .footer-area { background-color: #062356; padding: 50px 0 30px 80px; }
+  .footer-area .row { display: flex; flex-wrap: wrap; }
+  .footer-area .col-lg-3 { flex: 1 1 25%; max-width: 25%; padding: 15px; box-sizing: border-box; }
+  .col-lg-3.col-md-6.contacto-footer { padding: 15px; }
+  h2.widget-title { font-size: 24px; font-family: "Montserrat", sans-serif; font-weight: 500; position: relative; color: rgba(255, 255, 255, 1); }
 /*----- CONTACTO WIDGET -------*/
-h2.widget-title-contacto {
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  position: relative;
-  color: rgba(255, 255, 255, 1);
-}
-
+h2.widget-title-contacto { font-size: 24px; font-family: "Montserrat", sans-serif; font-weight: 500; position: relative; color: rgba(255, 255, 255, 1); }
 /*----- FIN CONTACTO WIDGET -------*/
-
 /*----- SUSCRIBITE WIDGET -------*/
-h2.widget-title-suscribite {
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  position: relative;
-  color: rgba(255, 255, 255, 1);
-}
-
-.subscribe-form {
-  display: flex;
-  align-items: center;
-}
-
-.subscribe-form input[type="email"] {
-  flex: 1;
-  padding: 8px 12px;
-  border: 1px solid #aeaeae93;
-  border-radius: 10px 0 0 10px; /* solo bordes izquierdos redondeados */
-  outline: none;
-}
-
-.suscribe-button {
-  background-color: #05307a;
-  border: 1px solid #aeaeae93;
-  border-radius: 10px 8px;
-  padding: 10px 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.suscribe-button i {
-  font-size: 16px;
-  color: #ffffff;
-}
+h2.widget-title-suscribite { font-size: 24px; font-family: "Montserrat", sans-serif; font-weight: 500; position: relative; color: rgba(255, 255, 255, 1); }
+.subscribe-form { display: flex; align-items: center; }
+.subscribe-form input[type="email"] { flex: 1; padding: 8px 12px; border: 1px solid #aeaeae93; border-radius: 10px 0 0 10px; outline: none; }
+.suscribe-button { background-color: #05307a; border: 1px solid #aeaeae93; border-radius: 10px 8px; padding: 10px 15px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.suscribe-button i { font-size: 16px; color: #ffffff; }
 /*----- FIN SUSCRIBITE WIDGET -------*/
-
 /*----- CENTRAL DE AYDUA -------*/
-h2.widget-title-ayuda {
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  position: relative;
-  color: rgba(255, 255, 255, 1);
-}
-
-
+h2.widget-title-ayuda { font-size: 24px; font-family: "Montserrat", sans-serif; font-weight: 500; position: relative; color: rgba(255, 255, 255, 1); }
 /*----- FIN CENTRAL DE AYUDA -------*/
-  .footer-box p {
-    color: rgba(255, 255, 255, 1);
-    line-height: 1.8;
-    font-size: 17px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .footer-box ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .footer-box ul li {
-    margin-bottom: 8px;
-  }
-  
-  .footer-box ul li:last-child {
-    margin-bottom: 0;
-  }
-  
-  .footer-box.subscribe form input[type=email] {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.46);
-    width: 79%;
-    padding: 9px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    margin-right: 4px;
-  }
-  
-  .footer-box.subscribe form input[type=email]::placeholder {
-    color: rgba(255, 255, 255, 1); 
-  }
-  
-  .footer-box.subscribe form button:focus {
-    outline: none;
-  }
-  
-  .footer-box ul li a {
-    color: rgba(255, 255, 255, 1);
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    font-weight: 200;
-  }
-  
-  .footer-box.pages ul li {
-    position: relative;
-    padding-left: 18px;
-  }
-  
-  .footer-box.pages ul li:before {
-    position: absolute;
-    left: 0;
-    top: 2px;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #ffffff;
-  }
-
-  .footer-box .icono-footer-derecha {
-    display: none;
-  }
-  
-  .get-in-touch {
-    position: relative;
-    right: 45px;
-  }
+  .footer-box p { color: rgba(255, 255, 255, 1); line-height: 1.8; font-size: 17px; font-family: "Montserrat", sans-serif; }
+  .footer-box ul { margin: 0; padding: 0; list-style: none; }
+  .footer-box ul li { margin-bottom: 8px; }
+  .footer-box ul li:last-child { margin-bottom: 0; }
+  .footer-box.subscribe form input[type=email] { border: none; background-color: rgba(255, 255, 255, 0.46); width: 79%; padding: 9px; border-radius: 8px; font-size: 16px; font-family: "Montserrat", sans-serif; margin-right: 4px; }
+  .footer-box.subscribe form input[type=email]::placeholder { color: rgba(255, 255, 255, 1);  }
+  .footer-box.subscribe form button:focus { outline: none; }
+  .footer-box ul li a { color: rgba(255, 255, 255, 1); font-family: "Montserrat", sans-serif; font-size: 17px; font-weight: 200; }
+  .footer-box.pages ul li { position: relative; padding-left: 18px; }
+  .footer-box.pages ul li:before { position: absolute; left: 0; top: 2px; content: "\f105"; font-family: "Font Awesome 5 Free"; font-weight: 900; color: #ffffff; }
+  .footer-box .icono-footer-derecha { display: none; }
+  .get-in-touch { position: relative; right: 45px; }
   /* -----------------------------------------------------------------------------
   # Hover Styles
   ----------------------------------------------------------------------------- */
-  a.navbar-brand {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
+  a.navbar-brand { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  a.navbar-brand:hover { opacity: 0.7;}
+  a.boxed-btn { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  a.boxed-btn:hover { background-color: #d4d4d4; color: #367ec5;}
+  a.bordered-btn { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  a.bordered-btn:hover { background-color: #367ec5; color: #fff;}
+  ul.sub-menu a { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  ul.sub-menu li:hover a { color: #367ec5;}
+  .footer-box.pages ul li a { transition: 0.5s;}
+  .footer-box.pages ul li a:hover { color: #ffffff8e;}
+  .footer-box.subscribe form button { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  .footer-box.subscribe form button:hover { background-color: #093480; color: #051922;}
+  .social-icons ul li:hover a { color: #367ec5;}
+  ul.social-link-team li a:hover { background-color: #051922; color: #367ec5;}
+  .counter-box { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  .counter-box:hover { -webkit-box-shadow: 0 0 80px #6f6f6f; box-shadow: 0 0 80px #6f6f6f;}
   
-  a.navbar-brand:hover {
-    opacity: 0.7;
-  }
-  
-  a.boxed-btn {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  a.boxed-btn:hover {
-    background-color: #d4d4d4;
-    color: #367ec5;
-  }
-  
-  a.bordered-btn {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  a.bordered-btn:hover {
-    background-color: #367ec5;
-    color: #fff;
-  }
-  
-  ul.sub-menu a {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  ul.sub-menu li:hover a {
-    color: #367ec5;
-  }
-  
-  .footer-box.pages ul li a {
-    transition: 0.5s;
-  }
-  
-  .footer-box.pages ul li a:hover {
-    color: #ffffff8e;
-  }
-  
-  .footer-box.subscribe form button {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .footer-box.subscribe form button:hover {
-    background-color: #093480;
-    color: #051922;
-  }
-  
-  .social-icons ul li:hover a {
-    color: #367ec5;
-  }
-  
-  ul.social-link-team li a:hover {
-    background-color: #051922;
-    color: #367ec5;
-  }
-  
-  .counter-box {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .counter-box:hover {
-    -webkit-box-shadow: 0 0 80px #6f6f6f;
-    box-shadow: 0 0 80px #6f6f6f;
-  }
-  
-  input[type="submit"] {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    border-radius: 50px !important;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #051922;
-    color: #367ec5;
-  }
-  
-  .pagination-wrap ul li a {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .pagination-wrap .active{
-    color: #e6e6e6;
-  }
-  
-  .pagination-wrap ul li:hover a {
-    background-color: #367ec5;
-    color: #e6e6e6;
-  }
-  
-  .icons a i {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .icons a:hover i {
-    color: #367ec5;
-  }
+  input[type="submit"] { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; border-radius: 50px !important;}
+  input[type="submit"]:hover { background-color: #051922; color: #367ec5;}
+  .pagination-wrap ul li a { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  .pagination-wrap .active{ color: #e6e6e6;}
+  .pagination-wrap ul li:hover a { background-color: #367ec5; color: #e6e6e6;}
+  .icons a i { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  .icons a:hover i { color: #367ec5;}
+  .product-image img { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+  .product-image img:hover { -webkit-box-shadow: none; box-shadow: none;}
 
-  .product-image img {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .product-image img:hover {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  
-  ul.sub-menu li:hover a {
-    color: #367ec5 !important;
-  }
-  
-  .sidebar-section ul li a {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .sidebar-section ul li a:hover {
-    opacity: 0.7;
-  }
-  
-  ul.product-share li a {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  ul.product-share li:hover a {
-    color: #367ec5;
-  }
-  
-  span.close-btn {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  span.close-btn:hover {
-    color: #fff;
-  }
-  
-  a.mobile-show.search-bar-icon {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  a.mobile-show.search-bar-icon:hover {
-    color: #367ec5;
-  }
+  span.close-btn { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+  span.close-btn:hover { color: #fff; }
 
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
+  html, body { height: 100%; margin: 0; }
+  .hero-bg { height: 80%;  } 
+  .row { margin-right: 0; margin-left: 0; }
+  .row-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
 
-  .hero-bg {
-    height: 80%; 
-  } 
+  .hero-area { background-color: #f3f6fb; }
+  .hero-area:after { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; z-index: -1; }
 
-  .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
+  .hero-text { display: table; height: 100%; }
+  .hero-text h1 { line-height: 1.1; color: #062356; font-weight: 700; font-style: normal; width: 65%; max-width: 100%; margin: 0 auto 30px auto; text-align: center; }
+  .hero-text-tablecell { display: table-cell; vertical-align: middle; text-align: center; }
 
-  .row-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  .hero-h1 { display: block; }
+	.hero-h1-responsive { display: none;  }
+  .hero-subtitle { font-size: 19px; line-height: 1.5; color: #444444; font-family: "Montserrat", sans-serif; font-weight: 400; width: 70%; max-width: 700px; margin: 20px auto; text-align: center; }
 
-  .offset-lg-2 {
-    margin-left: 0;
-}
+  .hero-button { display: inline-block; margin-top: 25px; padding: 12px 28px; background-color: #062356; color: #ffffff; font-size: 18px; font-family: "Montserrat", sans-serif; font-weight: 500; border: none; border-radius: 8px; text-decoration: none; text-align: center; transition: 0.5s; }
+  .hero-button:hover { transform: translateY(-3px); color: #fff; }
+  
+  .hero-about-button:hover { transform: translateY(-3px); color: #fff; }
+  .hero-about-button { display: inline-block; margin-top: 15px; padding: 9px 22px; background-color: #062356; color: #ffffff; font-size: 18px; font-family: "Montserrat", sans-serif; font-weight: 700; border: none; border-radius: 8px; text-decoration: none; text-align: center; transition: 0.5s; }
 
-.col-lg-9 {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.col-lg-9 {
-  padding-right: 0;
-  padding-left: 0;
-}
+  .hero-area div { height: 100%; }
+  .hero-area div.hero-text { width: 100%; }
+  .hero-area div.hero-text-tablecell { height: auto; vertical-align: middle; }
+  .hero-area div.hero-text-tablecell div { height: auto; vertical-align: middle; }
+  .hero-btns { margin-top: 35px; }
+  .hero-btns a.bordered-btn { margin-left: 15px; }
   
-  .hero-text {
-    display: table;
-    height: 100%;
-  }
-  
-  .hero-text-tablecell {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
-
-  .hero-area {
-    background-color: #f3f6fb;
-  }
-  
-  .hero-area:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    z-index: -1;
-  }
-
-  .hero-h1 {
-		display: block;
-	}
-	.hero-h1-responsive {
-		display: none; 
-	}
-  
-  .hero-text h1 {
-    /* font-size: 50px; */
-    line-height: 1.1;
-    color: #062356;
-    /* font-family: "Montserrat", sans-serif; */
-    font-weight: 700;
-    font-style: normal;
-    width: 65%;
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-    text-align: center;
-  }
-
-  .hero-subtitle {
-    font-size: 19px;
-    line-height: 1.5;
-    color: #444444;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    width: 70%;
-    max-width: 700px;
-    margin: 20px auto;
-    text-align: center;
-  }
-
-  .hero-button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 28px;
-    background-color: #062356;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.5s;
-  }
-  
-  .hero-about-button:hover {
-    transform: translateY(-3px);
-    color: #fff;
-  }
-  .hero-about-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 9px 22px;
-    background-color: #062356;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.5s;
-  }
-  
-  .hero-button:hover {
-    transform: translateY(-3px);
-    color: #fff;
-  }
-  
-  .hero-area div {
-    height: 100%;
-  }
-  
-  .hero-area div.hero-text {
-    width: 100%;
-  }
-  
-  .hero-area div.hero-text-tablecell {
-    height: auto;
-    vertical-align: middle;
-  }
-  
-  .hero-area div.hero-text-tablecell div {
-    height: auto;
-    vertical-align: middle;
-  }
-  
-  .hero-btns {
-    margin-top: 35px;
-  }
-  
-  .hero-btns a.bordered-btn {
-    margin-left: 15px;
-  }
-  
-  .hero-area div.hero-form {
-    background-color: #fff;
-    text-align: center;
-    width: 380px;
-    margin: 0 auto;
-    margin-right: 0;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 15px #2d2d2d;
-    box-shadow: 0 0 15px #2d2d2d;
-    position: absolute;
-    right: 30px;
-    bottom: -15%;
-    height: 600px;
-  }
-  
-  input[type="submit"] {
-    background-color: rgba(57, 148, 209, 1);
-    color: rgba(255, 255, 255, 1);
-    font-weight: 400;
-    font-size: 15px;
-    border: none !important;
-    cursor: pointer;
-    padding: 7px 70px;
-    border-radius: 3px;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: rgb(26, 111, 168);
-    color: #fff;
-  }
-  
-  .row-home {
-    width: 86%;
-  }
-  
-  .list-section {
-    background-color: rgba(245, 245, 245, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .list-box {
-    margin-left: 40px;
-  }
-
-  .list-section-btn {
-    font-family: "Montserrat", sans-serif;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 300;
-    font-size: 14px;
-  }
-  
-  .list-box .content h3 {
-    display: block;
-    line-height: 22px;
-    font-size: 17px;
-    margin-bottom: 4px;
-    margin-top: 40px;
-  }
-  
-  .list-box .content p {
-    font-family: "Montserrat", sans-serif;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 300;
-    font-size: 14px;
-  }
-  
-  .list-box .list-icon i {
-    display: block;
-    font-size: 26px;
-    margin-right: 15px;
-    color: #367ec5;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    line-height: 60px;
-    border: 3px rgba(57, 148, 209, 1) dotted;
-    border-radius: 50%;
-  }
-  
-  .list-box .img-icon {
-    margin-right: 14px;
-    width: 105px;
-    height: 105px;
-    text-align: center;
-    margin-top: 49px;
-    line-height: 97px;
-    border: 2px rgba(57, 148, 209, 1) dotted;
-    border-radius: 50%;
-  }
-  
-  .list-box .img-icon img {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 4px;
-  }
-  
-  .list-box .img-icon-serum {
-    margin-right: 10px;
-    color: #367ec5;
-    width: 105px;
-    height: 105px;
-    text-align: center;
-    margin: 49px 13px 0px 40px;
-    border: 2px rgba(57, 148, 209, 1) dotted;
-    border-radius: 50%;
-  }
-
-  .btn-ver-mas {
-    font-family: "Montserrat", sans-serif;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 250;
-    font-size: 14px;
-  }
-
-  .btn-ver-mas:hover {
-    color: rgba(0, 0, 0, 1);
-  }
-  
-  .list-box .img-icon-serum img {
-    width: 64px;
-    height: 84px;
-    margin: 7px 7px 0 0;
-  }
-  
-  .info-text {
-    text-align: center;
-  }
-  
-  .info-text h1 {
-    color: #197fc3;
-    font-size: 65px;
-    line-height: 76px;
-    padding-bottom: 45px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .blu {
-    color: #070404;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-    right: 9px;
-  }
-  
-  .container-header-contact {
-    margin: 0 47px;
-    max-width: 100%;
-    border-bottom: 1px solid #dbdbdb;
-  }
-  
-  .site-logo-contact img {    
-    float: left;
-    max-width: 181px;
-    position: relative;
-    right: 16px;
-    margin-bottom: 10px;
-  }
-
-  .site-logo-about img {    
-    float: left;
-    max-width: 181px;
-    position: relative;
-    right: 16px;
-    margin-bottom: 10px;
-  }
-  
-  nav.main-menu-contact ul li a {
-    color: #ffffff;
-    display: block;
-    margin: 0px 10px;
-    font-size: 14px;
-    margin-top: 27px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  nav.main-menu-contact ul {
-    padding: 1px 0;
-    list-style: none;
-    position: relative;
-    float: right;
-    bottom: 23px;
-    margin: 0;
-  }
-  
-  nav.main-menu-contact ul li {
-    display: inline-block;
-  }
-  
-  nav.main-menu-contact ul li a:hover {
-    transform: translateY(-2px)
-  } 
-  
-  .footer-area-contact {
-    background-color: #051922;
-    padding: 50px 0;
-    margin-top: 95px;
-  }
-
-  .valores-container {
-    position: relative;
-    top: 40px;
-    right: 26px;
-  }
-  
-  .feature-bg {
-    position: relative;
-    padding: 100px 0;
-    margin: 50px 0 80px 0;
-  }
-  
-  .feature-bg img {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 36%;
-    height: 93%;
-    content: "";
-    background-size: cover;
-    background-position: center;
-    border-bottom-left-radius: 5px;
-  }
-  
-  .featured-text {
-    margin-left: 84px;
-    width: 120%;
-    position: relative;
-    left: 55px;
-    bottom: 40px;
-  }
-  
-  .valores-title {
-    margin-bottom: 30px;
-    width: 58%;
-  }
-  
-  .valores-title h2{
-    font-family: "Montserrat", sans-serif;
-    color: rgba(57, 148, 209, 1);
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  
-  .valores-title p {
-      font-family: "Montserrat", sans-serif;
-      font-size: 19px;
-      font-weight: 300;
-      color: rgba(30, 30, 30, 1);
-      line-height: 24px;
-  }
-  
-  .valores-title-right {
-    margin-bottom: 30px;
-    width: 58%;
-  }
-  
-  .valores-title-right h2{
-    font-family: "Montserrat", sans-serif;
-    color: rgba(57, 148, 209, 1);
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  
-  .valores-title-right p {
-      font-family: "Montserrat", sans-serif;
-      font-size: 19px;
-      font-weight: 300;
-      color: rgba(30, 30, 30, 1);
-      line-height: 24px;
-  }
-  
-  .content-valores p {
-    color: rgba(30, 30, 30, 1);
-    font-family: "Montserrat", sans-serif;
-    line-height: 22px;
-    font-weight: 300;
-    font-size: 16px;
-  }
-  
-  .content-valores p span {
-    color: rgba(57, 148, 209, 1);
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 350;
-  }
-  
-  .content-valores-right {
-    position: relative;
-    left: 100px;
-  }
-  
-  .content-valores-right p {
-    color: rgba(30, 30, 30, 1);
-    font-family: "Montserrat", sans-serif;
-    line-height: 22px;
-    font-weight: 300;
-    font-size: 16px;
-  }
-  
-  .content-valores-right p span {
-    color: rgba(57, 148, 209, 1);
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 350;
-  }
-
-  .pt-100-3 {
-    padding-top: 0;
-  }
-
-/*--------- FORM UNIDAD ------------*/
-.form-unidad-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  right: 110px;
-  padding-right: 33px;
-  margin-top: 12vh;
-}
-
-.contact-form-unidad {
-  width: 100%;
-  max-width: 800px; 
-  background-color: #fff; 
-  padding: 20px;
-  border-radius: 10px;
-  margin-left: 20px;
-}
-
-.contact-form-unidad form p {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.contact-form-unidad form p input[type=text],
-.contact-form-unidad form p input[type=tel],
-.contact-form-unidad form p input[type=email] {
-  width: 49%;
-  padding: 18px 0px 18px 26px;
-  border: none;
-  border-radius: 25px;
-  background-color: rgba(243, 243, 243, 1);
-  margin-bottom: 12px;
-  font-size: 14px;
-}
-
-.contact-form-unidad form p input[type=text]:focus,
-.contact-form-unidad form p input[type=tel]:focus,
-.contact-form-unidad form p input[type=email]:focus,
-.contact-form-unidad form p textarea:focus {
-  border: 2px solid rgba(57, 148, 209, 0.8); 
-  background-color: rgba(243, 243, 243, 1); 
-  outline: none; 
-}
-
-.contact-form-unidad form p textarea {
-  border: none;
-  border-radius: 25px;
-  background-color: rgba(243, 243, 243, 1);
-  padding: 15px;
-  height: 200px;
-  width: 100%; 
-  resize: none;
-}
-
-.contact-form-unidad form p input[type=submit] {
-  width: 20%;
-  padding: 5px 15px;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.contact-form-unidad form p input[type=submit]:hover {
-  background-color: rgba(57, 148, 209, 0.8);
-}
-
-.form-unidad-title {
-  text-align: center;
-  margin-bottom: 25px;
-  border-left: 1px solid rgba(57, 148, 209, 1);
-  width: 52%;
-}
-
-.form-unidad-title h2 {
-  font-size: 42px;
-  color: rgba(57, 148, 209, 1);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  line-height: 36.57px;
-  margin-right: 32px;
-  position: relative;
-  right: 10px;
-}
-
-.form-btn-unidad {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: rgba(57, 148, 209, 1);
-  padding: 1px 30px;
-  margin-top: 12px;
-  border-radius: 30px;
-  font-size: 17px;
-  border: 1px solid rgba(57, 148, 209, 1);
-  float: right;
-  background-color: transparent; /* Añadido para asegurar que el fondo sea transparente */
-  cursor: pointer; /* Añadido para indicar que es clickeable */
-}
-
-.form-btn-unidad:hover {
-  background-color: #367ec5;
-  color: #fff;
-}
-
-::placeholder {
-  color: rgba(135, 135, 135, 1); 
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-}
-
-/*----------- FIN FORM UNIDAD -----------*/
+  .row-home { width: 86%; }
 /*--------------- COKIES PAGE ---------------*/
 /* Base */
 .cookie-pol-wrap{max-width:1100px;margin:0 auto;padding:0 20px;font-family:"Montserrat",sans-serif;color:#111}
