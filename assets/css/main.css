@@ -586,281 +586,34 @@ body.nav-open{ overflow: hidden; }
     top: 5%;
     cursor: pointer;
   }
-  
-  .search-area {
-    height: 100%;
-  }
-  
-  .search-area div {
-    height: 100%;
-  }
-  
-  .search-bar {
-    height: 100%;
-    display: table;
-    width: 100%;
-  }
-  
-  a.mobile-show {
-    display: none;
-  }
-  
-  .search-area .search-bar div.search-bar-tablecell {
-    display: table-cell;
-    vertical-align: middle;
-    height: auto;
-  }
-  
-  .search-bar-tablecell input {
-    border: none;
-    padding: 15px;
-    width: 60%;
-    background-color: transparent;
-    border-bottom: 1px solid #367ec5;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #fff;
-  }
-  
-  .search-bar-tablecell button[type=submit] {
-    border: none;
-    background-color: #367ec5;
-    padding: 15px 30px;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 50px;
-    font-weight: 700;
-  }
-  
-  .search-bar-tablecell input::-webkit-input-placeholder {
-    color: #fff;
-  }
-  
-  .search-bar-tablecell input:-ms-input-placeholder {
-    color: #fff;
-  }
-  
-  .search-bar-tablecell input::-ms-input-placeholder {
-    color: #fff;
-  }
-  
-  .search-bar-tablecell input::placeholder {
-    color: #fff;
-  }
-  
-  .search-bar-tablecell button[type=submit] i {
-    margin-left: 5px;
-  }
-  
-  .search-area {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .search-area.search-active {
-    visibility: visible;
-    opacity: 1;
-    z-index: 999;
-  }
-  
-  .search-bar-tablecell h3 {
-    color: #fff;
-    margin-bottom: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-  }
-
-
-
   /*------------------- SONRE NOSOTROS INICIO --------------------*/
 
-  .section-sep {
-    border: none;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      rgba(0,0,0,0) 0%,
-      rgba(0,0,0,0.08) 50%,
-      rgba(0,0,0,0) 100%
-    );
-    margin: 0;
-  }
-
-  .sobre-nosotros-section {
-    padding: 50px 20px;
-    background-color: #f3f6fb;
-    border-top:1px solid #e9edf4;
-    border-bottom:1px solid #e9edf4;
-    font-family:"Montserrat",sans-serif;
-  }
-  
-  .container-nosotros-columns {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 90%;
-    margin: 0 auto;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .col-nosotros-texto {
-    flex: 1;
-    min-width: 300px;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-  }
-  
-  .col-nosotros-texto h2 {
-    font-size: 43px;
-    color: #062356;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 650;
-    margin-bottom: 30px;
-    text-transform:uppercase;
-    letter-spacing:.2px;
-  }
-  .col-nosotros-texto h2::after{
-    content: "";
-    display: block;
-    width: 20%;
-    height: 2px;
-    background :#062356;
-    border-radius: 2px;
-    margin: 12px 0 6px;
-    opacity: .9;
-  }
-  .col-nosotros-texto p{
-    margin:0 0 12px;
-    color:#444;
-    font-size: 16px;
-    line-height: 1.7;
-    max-width: 760px;
-  }
-  
-  .col-nosotros-texto .intro {
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 30px;
-    line-height: 1.6;
-  }
-  
-  .nosotros-bloques div {
-    margin-bottom: 20px;
-  }
-  
-  .nosotros-bloques h3 {
-    font-size: 20px;
-    color: #062356;
-    margin-bottom: 8px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .nosotros-bloques p {
-    font-size: 16px;
-    color: #444;
-    line-height: 1.5;
-  }
-  
-  .col-nosotros-img {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-  }
-  
-  .col-nosotros-img img {
-    max-width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius:12px;
-    background:linear-gradient(135deg,#eef3fb 0%,#ffffff 100%);
-    border:1px solid #e6eaf1;
-    box-shadow:0 8px 22px rgba(0,0,0,.06);
-  }
+  .section-sep { border: none; height: 1px; background: linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0) 100% ); margin: 0; }
+  .sobre-nosotros-section { padding: 50px 20px; background-color: #f3f6fb; border-top:1px solid #e9edf4; border-bottom:1px solid #e9edf4; font-family:"Montserrat",sans-serif; }
+  .container-nosotros-columns { display: flex; flex-wrap: wrap; max-width: 90%; margin: 0 auto; align-items: center; gap: 40px; }
+  .col-nosotros-texto { flex: 1; min-width: 300px; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+  .col-nosotros-texto h2 { font-size: 43px; color: #062356; font-family: "Montserrat", sans-serif; font-weight: 650; margin-bottom: 30px; text-transform:uppercase; letter-spacing:.2px; }
+  .col-nosotros-texto h2::after{ content: ""; display: block; width: 20%; height: 2px; background :#062356; border-radius: 2px; margin: 12px 0 6px; opacity: .9; }
+  .col-nosotros-texto p{ margin:0 0 12px; color:#444; font-size: 16px; line-height: 1.7; max-width: 760px; }
+  .col-nosotros-texto .intro { font-size: 16px; color: #444; margin-bottom: 30px; line-height: 1.6; }
+  .nosotros-bloques div { margin-bottom: 20px; }
+  .nosotros-bloques h3 { font-size: 20px; color: #062356; margin-bottom: 8px; font-family: "Montserrat", sans-serif; }
+  .nosotros-bloques p { font-size: 16px; color: #444; line-height: 1.5; }
+  .col-nosotros-img { flex: 1; min-width: 300px; text-align: center; }
+  .col-nosotros-img img { max-width: 100%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius:12px; background:linear-gradient(135deg,#eef3fb 0%,#ffffff 100%); border:1px solid #e6eaf1; box-shadow:0 8px 22px rgba(0,0,0,.06); }
   /*------------ FIN SONRE NOSOTROS INICIO ------------*/
-
   /*----------------- DIÁLISIS INICIO -----------------*/
-
-  .dialisis-section {
-    background-color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-    margin: 50px 0 70px 0;
-  }
-  
-  .container-dialisis {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .dialisis-section h2 {
-    font-size: 45px;
-    color: #062356;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    margin-bottom: 40px;
-  }
-  
-  .tarjetas-dialisis {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
-  }
-  
-  .card-dialisis {
-    background-color: #f4f6fb;
-    padding: 30px 18px;
-    border-radius: 12px;
-    width: 297px;
-  }
-  
-  .card-dialisis i {
-    font-size: 32px;
-    color: #062356;
-    margin-bottom: 15px;
-  }
-  
-  .card-dialisis h3 {
-    font-size: 20px;
-    color: #062356;
-    margin-bottom: 20px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .card-dialisis p {
-    font-size: 16px;
-    color: #444;
-    line-height: 1.5;
-    padding: 0 6px;
-  }
-
-  .dialisis-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #062356;
-    color: #ffffff;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: 0.5s ease;
-  }
-  
-  .dialisis-btn:hover {
-    transform: translateY(-3px);
-    color: #ffffff;
-  }
+  .dialisis-section { background-color: #ffffff; padding: 60px 20px; text-align: center; margin: 50px 0 70px 0; }
+  .container-dialisis { max-width: 100%; margin: 0 auto; }
+  .dialisis-section h2 { font-size: 45px; color: #062356; font-family: "Montserrat", sans-serif; font-weight: 600; margin-bottom: 40px; }
+  .tarjetas-dialisis { display: flex; flex-wrap: wrap; justify-content: center; gap: 60px; }
+  .card-dialisis { background-color: #f4f6fb; padding: 30px 18px; border-radius: 12px; width: 297px; }
+  .card-dialisis i { font-size: 32px; color: #062356; margin-bottom: 15px; }
+  .card-dialisis h3 { font-size: 20px; color: #062356; margin-bottom: 20px; font-family: "Montserrat", sans-serif; }
+  .card-dialisis p { font-size: 16px; color: #444; line-height: 1.5; padding: 0 6px; }
+  .dialisis-btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #062356; color: #ffffff; font-size: 15px; font-family: "Montserrat", sans-serif; font-weight: 500; border-radius: 6px; text-decoration: none; transition: 0.5s ease; }
+  .dialisis-btn:hover { transform: translateY(-3px); color: #ffffff; }
   /*---------------- FIN DIÁLISIS INICIO -----------------*/
-
   /*---------------- PRODUCTOS ----------------*/
   .productos-premium-section { padding: 90px 20px; text-align: center; background-color: #ffffff; }
   .productos-premium-section h2 { font-size: 41px; color: #062356; margin-bottom: 60px; font-family: "Montserrat", sans-serif; font-weight: 600; text-transform: uppercase; }
@@ -903,62 +656,156 @@ body.nav-open{ overflow: hidden; }
 .contact-dial-btn-quick:hover { color: #ffffff; background-color: #0a3b91; }
 
 /* PAGINA PRODUCTOS */
-.products-dial-page { background: #ffffff; padding: 56px 20px 90px; }
-.products-dial-wrap { max-width: 1200px; margin: 0 auto 0 45px; display: grid; grid-template-columns: 280px 1fr; gap: 40px; }
-.products-dial-sidebar { position: sticky; top: 90px; align-self: start; background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px; padding: 20px; }
-.products-dial-sidebar h2 { margin: 0 0 12px 0; font-size: 22px; color: #062356; font-weight: 700; font-family: "Montserrat", sans-serif; }
-.products-dial-nav { display: flex; flex-direction: column; gap: 8px; }
-.products-dial-nav a { display: block; padding: 10px 12px; border-radius: 8px; text-decoration: none; color: #0a2c66; border: 1px solid transparent; transition: background-color .2s ease, border-color .2s ease; font-size: 15px; }
-.products-dial-nav a:hover { background: #eef3fb; border-color: #e0e8f5; }
-.products-dial-nav a.active { background: #e9f0fb; border-color: #d6e3fa; }
-.products-dial-content h1 { position: relative; display: inline-block; color: #062356; /* margin: 0 0 10px 0; */ font-weight: 700; padding-bottom: 22px; }
-.products-dial-content h1::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 70px; height: 3px; background: var(--nm-azul); border-radius: 2px; }
-.products-dial-header p { font-size: 18px; line-height: 1.6; margin: 16px auto 30px; color: #555; font-weight: 300; }
-.products-dial-section { background: #ffffff; border: 1px solid #e9edf4; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.05); padding: 22px 24px; }
-.products-dial-section .products-dial-section { margin-top: 24px; }
-.products-dial-section-head h2 { font-size: 22px; color: #062356; margin: 0 0 6px 0; font-weight: 700; font-family: "Montserrat", sans-serif; }
-.products-dial-section-body p { color: #444; line-height: 1.6; }
-.products-dial-bullets { margin: 14px 0 18px 18px; color: #333; }
-.products-dial-bullets li { margin-bottom: 6px; }
-.products-dial-grid { display: grid; grid-template-columns: repeat(2, minmax(260px, 1fr)); gap: 16px; margin-top: 14px; }
-.products-dial-item { background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px;
- padding: 16px; }
-.products-dial-item h3 { font-size: 18px; color: #062356; margin: 0 0 6px 0; font-family: "Montserrat", sans-serif; }
-.products-dial-item p { color: #444; margin: 0 0 10px 0; line-height: 1.5; }
-.products-dial-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-.products-dial-btn { display: inline-block; padding: 9px 16px; background-color: #062356; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500; font-family: "Montserrat", sans-serif; transition: transform .02s ease; }
-.products-dial-btn:hover { color: #ffffff; }
-.products-dial-link { font-size: 14px; color: #0a3b91; text-decoration: underline; }
-.products-dial-sep { border: none; height: 1px; background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #e5e9f2 50%, rgba(0,0,0,0) 100%); margin: 24px 0; }
-.pdetail-dial-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-.pdetail-dial-hero { background: linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%); padding: 48px 0 36px; border-bottom: 1px solid #e9edf4; }
-.pdetail-dial-breadcrumb { font-size: 14px; color: #667085; margin-bottom: 8px; }
-.pdetail-dial-breadcrumb a { color: #667085; text-decoration: none; }
-.pdetail-dial-breadcrumb a:hover { text-decoration: underline; }
-.pdetail-dial-hero h1 { font-size: 30px; color: #062356; margin: 6px 0 8px; letter-spacing: .5px; }
-.pdetail-dial-lead { color: #444; max-width: 840px; line-height: 1.6; }
-.pdetail-dial-body { background: #ffffff; padding: 28px 0 80px; }
-.pdetail-dial-layout { display: grid; grid-template-columns: 1fr 300px; gap: 28px; }
-.pdetail-dial-block + .pdetail-dial-block { margin-top: 20px; }
-.pdetail-dial-block h2 { font-size: 20px; color: #062356; margin: 0 0 8px 0; font-weight: 600; }
-.pdetail-dial-block p { color: #444; line-height: 1.6; }
-.pdetail-dial-list { margin: 10px 0 0 18px; color: #333; }
-.pdetail-dial-list li { margin-bottom: 6px; }
-.pdetail-dial-grid { display: grid; grid-template-columns: repeat(2, minmax(240px, 1fr)); gap: 14px; margin-top: 8px; }
-.pdetail-dial-item { background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px; padding: 14px; }
-.pdetail-dial-item h3 { font-size: 18px; color: #062356; margin: 0 0 6px; }
-.pdetail-dial-item p { color: #444; margin: 0 0 10px; line-height: 1.5; }
-.pdetail-dial-aside { position: sticky; top: 90px; height: fit-content; }
-.pdetail-dial-box { background: #f8f9fc; border: 1px solid #e6eaf1; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
-.pdetail-dial-box h3 { font-size: 18px; color: #062356; margin: 0 0 10px; }
-.pdetail-dial-links { list-style: none; padding: 0; margin: 0; }
-.pdetail-dial-links li { margin-bottom: 8px; }
-.pdetail-dial-links a { color: #0a3b91; text-decoration: underline; font-size: 14px; }
-.pdetail-dial-btn { display: inline-block; padding: 9px 16px; background-color: #062356; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500; font-family: "Montserrat", sans-serif; transition: transform .02s ease; }
-.pdetail-dial-btn:hover { color: #ffffff;}
-.pdetail-dial-btn:active { transform: translateY(1px); }
-.pdetail-dial-btn--sec { background-color: #0a3b91; }
-.pdetail-dial-btn--sec:hover { background-color: #062356; }
+/* ===================================================================
+   CÓDIGO FINAL Y UNIFICADO PARA PÁGINA DE PRODUCTOS
+   - Layout alineado a la izquierda en desktop, centrado en mobile -
+   =================================================================== */
+
+/* --- Layout General de la Página --- */
+.products-dial-page {
+  background: #ffffff;
+  padding: 56px 0;
+  color: #444444;
+}
+.products-dial-wrap {
+  max-width: 1200px;
+  /* El ajuste clave: margen izquierdo de 45px, y se completa automático a la derecha */
+  margin: 0 auto 0 45px; 
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* --- Sidebar de Navegación --- */
+.products-dial-sidebar {
+  position: sticky;
+  top: 110px; /* Ajustar según la altura final de tu header */
+  background: #f8f9fc;
+  border: 1px solid #e6eaf1;
+  border-radius: 10px;
+  padding: 24px;
+}
+.products-dial-sidebar h2 {
+  margin: 0 0 16px 0;
+  font-size: 22px;
+  color: #062356;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.products-dial-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.products-dial-nav a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #0a2c66;
+  border: 1px solid transparent;
+  transition: background-color .2s ease, border-color .2s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+.products-dial-nav a:hover {
+  background: #eef3fb;
+  border-color: #e0e8f5;
+  text-decoration: none;
+}
+.products-dial-nav a.active {
+  background: #e9f0fb;
+  border-color: #d6e3fa;
+  font-weight: 600;
+}
+
+/* --- Contenido Principal de Productos --- */
+.products-dial-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.products-dial-header h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  color: #062356;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.products-dial-header h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #062356;
+  border-radius: 2px;
+}
+.products-dial-header p {
+  font-size: 18px;
+  color: #555555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.products-dial-section {
+  background: #ffffff;
+  border: 1px solid #e6eaf1;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.products-dial-section-head h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #062356;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.products-dial-bullets {
+  margin: 16px 0 24px 24px;
+}
+.products-dial-bullets li {
+  margin-bottom: 8px;
+}
+.products-dial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.products-dial-item {
+  background: #f8f9fc;
+  border: 1px solid #e6eaf1;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.products-dial-item h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  color: #062356;
+  font-family: "Montserrat", sans-serif;
+}
+.products-dial-item p {
+  flex-grow: 1;
+  margin: 0 0 16px 0;
+  color: #444444;
+  line-height: 1.6;
+}
+.products-dial-actions {
+  margin-top: auto;
+}
+.products-dial-btn { display: inline-block; padding: 10px 16px; background-color: #062356; color: #ffffff; border-radius: 6px; text-decoration: none; font-weight: 500; font-family: "Montserrat", sans-serif; border: 1px solid transparent; cursor: pointer; transition: background-color 0.2s ease, transform 0.2s ease; }
+.products-dial-btn:hover { background-color: #0a2c66; color: #ffffff; text-decoration: none; transform: translateY(-2px); }
+hr.products-dial-sep { border: none; height: 1px; background: linear-gradient(90deg, transparent 0%, #e6eaf1 50%, transparent 100%); margin: 32px 0; }
 /*------------- FIN PAGINA PRODUCTOS --------------*/
 /*-----------------  SERVICES PAGE -----------------------*/
 /* ====== Variables de marca ====== */
